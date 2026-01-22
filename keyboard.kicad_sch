@@ -173,52 +173,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:SK6812MINI"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right bottom)
 				)
 			)
-			(property "Value" "SK6812MINI"
-				(at 1.27 -5.715 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-				(at 1.27 -7.62 0)
+			(property "Footprint" ""
+				(at -1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -227,7 +217,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -236,7 +226,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -245,172 +235,33 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "R_0_1"
 				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 			)
-			(symbol "SK6812MINI_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -418,6 +269,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1442,6 +1311,224 @@
 						)
 					)
 					(alternate "GND" passive line)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "extra_stuff:OLED_DISPLAY_I2C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "keyboard:MODULE_DM-OLED096-636"
+				(at 0 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.snapeda.com/parts/DM-OLED096-636/Display%20Module/datasheet/"
+				(at -1.778 -18.542 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OLED_DISPLAY_I2C_1_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 255 194 1)
+					)
+				)
+				(pin power_in line
+					(at -8.89 5.08 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 			)
 			(embedded_fonts no)
@@ -2598,6 +2685,12 @@
 		(uuid "d7f423c6-8a81-415b-accb-1ae7cbce9a7a")
 	)
 	(junction
+		(at 205.74 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9e42335-6854-4246-ba89-37d5b1da9a5f")
+	)
+	(junction
 		(at 185.42 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2726,8 +2819,8 @@
 		(uuid "57db1905-3b21-4dc5-af97-954b4e11eca0")
 	)
 	(no_connect
-		(at 373.38 120.65)
-		(uuid "5b71a4d4-a013-4c35-a986-647125c9f946")
+		(at 373.38 110.49)
+		(uuid "6c198f93-5795-4fcb-9ee5-c314ccb1067c")
 	)
 	(no_connect
 		(at 327.66 77.47)
@@ -2740,6 +2833,14 @@
 	(no_connect
 		(at 327.66 74.93)
 		(uuid "b5751bad-2ea2-434f-afde-e5bed3268ccf")
+	)
+	(no_connect
+		(at 373.38 120.65)
+		(uuid "da45897f-dcab-462d-8c4a-3dc0b9e248d7")
+	)
+	(no_connect
+		(at 373.38 113.03)
+		(uuid "ef3e8644-f1d5-4020-a321-1fe0f46308c1")
 	)
 	(wire
 		(pts
@@ -2770,6 +2871,16 @@
 			(type default)
 		)
 		(uuid "0182263c-48a6-45bf-8124-209e5edccedf")
+	)
+	(wire
+		(pts
+			(xy 331.47 152.4) (xy 331.47 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0290d722-82d6-4a81-87e3-93112c64d1e0")
 	)
 	(wire
 		(pts
@@ -2873,6 +2984,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 134.62) (xy 311.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0be97359-1ab3-4634-8077-f3323403e670")
+	)
+	(wire
+		(pts
 			(xy 129.54 58.42) (xy 129.54 86.36)
 		)
 		(stroke
@@ -2890,6 +3011,26 @@
 			(type default)
 		)
 		(uuid "0c29ba16-0943-4ef6-b981-3d02e2c72346")
+	)
+	(wire
+		(pts
+			(xy 200.66 48.26) (xy 200.66 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c3b2b96-4658-439e-96e2-06238c293e38")
+	)
+	(wire
+		(pts
+			(xy 307.34 111.76) (xy 318.77 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d006269-0e46-4bed-a151-cfbeb569bfd6")
 	)
 	(wire
 		(pts
@@ -3043,6 +3184,26 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 123.19) (xy 327.66 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1506ad02-be8a-4a6c-80f5-dd92da90bbe9")
+	)
+	(wire
+		(pts
+			(xy 317.5 115.57) (xy 327.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "158a8856-73f2-4a37-8800-148eeff0ff1f")
+	)
+	(wire
+		(pts
 			(xy 374.65 96.52) (xy 373.38 95.25)
 		)
 		(stroke
@@ -3150,16 +3311,6 @@
 			(type default)
 		)
 		(uuid "1d716d9f-b024-46b5-a1d0-c607af1d17f2")
-	)
-	(wire
-		(pts
-			(xy 313.69 127) (xy 327.66 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dd5c66a-94e6-4b19-a4d0-fc46908c206f")
 	)
 	(wire
 		(pts
@@ -3373,16 +3524,6 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 104.14) (xy 377.19 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f1d2255-17a5-4e62-ac8f-3a2750138f8d")
-	)
-	(wire
-		(pts
 			(xy 144.78 100.33) (xy 154.94 100.33)
 		)
 		(stroke
@@ -3410,16 +3551,6 @@
 			(type default)
 		)
 		(uuid "4069aaa2-c35c-4c5a-97ff-addcd5974156")
-	)
-	(wire
-		(pts
-			(xy 298.45 115.57) (xy 317.5 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41143a36-c0b6-4280-9abd-866fcb094303")
 	)
 	(wire
 		(pts
@@ -3733,6 +3864,16 @@
 	)
 	(wire
 		(pts
+			(xy 328.93 157.48) (xy 339.09 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b30e7c9-2859-47b8-8b9f-67215f3ca038")
+	)
+	(wire
+		(pts
 			(xy 195.58 147.32) (xy 195.58 148.59)
 		)
 		(stroke
@@ -3743,6 +3884,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 72.39) (xy 195.58 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7ffbe0-adf8-4782-a4f6-2278528256d7")
+	)
+	(wire
+		(pts
 			(xy 139.7 86.36) (xy 139.7 114.3)
 		)
 		(stroke
@@ -3750,6 +3901,16 @@
 			(type default)
 		)
 		(uuid "5e78b278-f374-4e6b-9362-deeab1013210")
+	)
+	(wire
+		(pts
+			(xy 307.34 104.14) (xy 321.31 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ed1ee74-9791-4e0e-b007-c7fe91fc14bf")
 	)
 	(wire
 		(pts
@@ -3793,6 +3954,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 107.95) (xy 327.66 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682804bc-8053-48e0-b47d-2e3619c18a0a")
+	)
+	(wire
+		(pts
 			(xy 83.82 72.39) (xy 93.98 72.39)
 		)
 		(stroke
@@ -3830,6 +4001,16 @@
 			(type default)
 		)
 		(uuid "69357bfc-b1a2-43e0-9e3d-05ef32d58864")
+	)
+	(wire
+		(pts
+			(xy 318.77 111.76) (xy 327.66 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b3d476d-9f3d-4a06-93b8-344f8967ee1a")
 	)
 	(wire
 		(pts
@@ -3983,6 +4164,16 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 130.81) (xy 312.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78720681-884e-4c78-9f60-dd3fd1c2f93d")
+	)
+	(wire
+		(pts
 			(xy 307.34 85.09) (xy 327.66 85.09)
 		)
 		(stroke
@@ -4003,13 +4194,13 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 127) (xy 313.69 127)
+			(xy 205.74 63.5) (xy 205.74 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c247892-e9b0-4e60-91d1-ede330b8f556")
+		(uuid "7b7ca916-ec50-4376-8ce3-1515c9c36f08")
 	)
 	(wire
 		(pts
@@ -4030,16 +4221,6 @@
 			(type default)
 		)
 		(uuid "7f7209d7-414e-49f1-9a0f-1f402535163f")
-	)
-	(wire
-		(pts
-			(xy 276.86 168.91) (xy 327.66 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f9447f1-9d56-4c8f-aad0-298876e082c0")
 	)
 	(wire
 		(pts
@@ -4083,6 +4264,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 96.52) (xy 388.62 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85be2c69-f0b2-4cf9-97f8-17c5b2884823")
+	)
+	(wire
+		(pts
 			(xy 104.14 100.33) (xy 114.3 100.33)
 		)
 		(stroke
@@ -4090,6 +4281,16 @@
 			(type default)
 		)
 		(uuid "862cb438-d354-4faf-bbc9-1b057ee102a3")
+	)
+	(wire
+		(pts
+			(xy 331.47 154.94) (xy 339.09 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878b6e1c-37e1-419d-bb74-45765cf6ac67")
 	)
 	(wire
 		(pts
@@ -4273,13 +4474,13 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 168.91) (xy 284.48 172.72)
+			(xy 307.34 127) (xy 313.69 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99e3e2f4-979f-4371-ae61-db85cff80272")
+		(uuid "9a003bb6-7f1b-44f9-b836-81570a3fa080")
 	)
 	(wire
 		(pts
@@ -4303,13 +4504,23 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 119.38) (xy 316.23 119.38)
+			(xy 321.31 104.14) (xy 327.66 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9bc933c9-f949-4786-9dac-eb29b1b0140c")
+		(uuid "9c046e08-ed38-43dc-a10e-216afd0c8228")
+	)
+	(wire
+		(pts
+			(xy 307.34 115.57) (xy 317.5 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c1fdfa1-bc79-4077-8f5b-4ee0582504b4")
 	)
 	(wire
 		(pts
@@ -4330,16 +4541,6 @@
 			(type default)
 		)
 		(uuid "9c432704-a8de-433a-a547-04be7fb9d8a8")
-	)
-	(wire
-		(pts
-			(xy 317.5 115.57) (xy 327.66 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c466931-d3b4-4e03-acc9-6d72e86ae91b")
 	)
 	(wire
 		(pts
@@ -4383,6 +4584,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 162.56) (xy 339.09 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ee1809b-afbb-47dd-a5e0-77e0c1aab881")
+	)
+	(wire
+		(pts
 			(xy 73.66 72.39) (xy 83.82 72.39)
 		)
 		(stroke
@@ -4390,16 +4601,6 @@
 			(type default)
 		)
 		(uuid "9f71b1f8-3269-44de-888e-23eb6dcb29f1")
-	)
-	(wire
-		(pts
-			(xy 292.1 180.34) (xy 292.1 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0837059-8556-44d3-ab4b-6c03adbd1b42")
 	)
 	(wire
 		(pts
@@ -4503,6 +4704,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 137.16) (xy 311.15 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67450d6-cdeb-416a-98eb-11864dbd66e2")
+	)
+	(wire
+		(pts
 			(xy 114.3 63.5) (xy 114.3 64.77)
 		)
 		(stroke
@@ -4510,16 +4721,6 @@
 			(type default)
 		)
 		(uuid "a6f781f5-68bd-4d0f-9e6d-4bdbaeeffba0")
-	)
-	(wire
-		(pts
-			(xy 318.77 111.76) (xy 327.66 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8ea5c40-501b-4286-aa74-908c79369e2e")
 	)
 	(wire
 		(pts
@@ -4550,6 +4751,16 @@
 			(type default)
 		)
 		(uuid "adbcf620-e4e4-47e4-88dc-c2009a40dde4")
+	)
+	(wire
+		(pts
+			(xy 374.65 88.9) (xy 388.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade4367d-a922-4cf9-aef4-cefd381e42b7")
 	)
 	(wire
 		(pts
@@ -4633,13 +4844,23 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 72.39) (xy 195.58 72.39)
+			(xy 215.9 72.39) (xy 205.74 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b3329201-9c3b-4a17-896d-8a668f80ce9f")
+	)
+	(wire
+		(pts
+			(xy 312.42 160.02) (xy 339.09 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b333ab2c-5245-43bc-9f98-7524e48b4213")
 	)
 	(wire
 		(pts
@@ -4673,16 +4894,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 111.76) (xy 318.77 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6984c83-c299-4fff-ba04-f5cdae1e9942")
-	)
-	(wire
-		(pts
 			(xy 154.94 203.2) (xy 154.94 204.47)
 		)
 		(stroke
@@ -4690,16 +4901,6 @@
 			(type default)
 		)
 		(uuid "b72c90f0-0cb0-44b1-9708-0cb02b30677f")
-	)
-	(wire
-		(pts
-			(xy 292.1 156.21) (xy 327.66 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7354b4d-621c-4e70-8242-ce0e6e3e066b")
 	)
 	(wire
 		(pts
@@ -4803,6 +5004,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 119.38) (xy 316.23 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9c1421-4463-4ddf-9ba1-5f88483a4cba")
+	)
+	(wire
+		(pts
 			(xy 63.5 72.39) (xy 73.66 72.39)
 		)
 		(stroke
@@ -4820,26 +5031,6 @@
 			(type default)
 		)
 		(uuid "bbe6adaa-dbbf-464f-a44f-2ce32a339336")
-	)
-	(wire
-		(pts
-			(xy 276.86 180.34) (xy 276.86 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd04197d-4066-4585-85c5-ecc5f44ee914")
-	)
-	(wire
-		(pts
-			(xy 314.96 123.19) (xy 327.66 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdad7230-216b-4cab-9583-431a3bbd53fb")
 	)
 	(wire
 		(pts
@@ -4903,16 +5094,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 104.14) (xy 321.31 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1d81e82-bd22-4385-a6af-f434e91ec420")
-	)
-	(wire
-		(pts
 			(xy 307.34 88.9) (xy 326.39 88.9)
 		)
 		(stroke
@@ -4950,6 +5131,16 @@
 			(type default)
 		)
 		(uuid "c4d77766-ea2c-4136-8fde-70c08c8c4ff4")
+	)
+	(wire
+		(pts
+			(xy 313.69 127) (xy 327.66 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c52e5c3c-7da5-4f0e-a35e-b915a3d7d1f9")
 	)
 	(wire
 		(pts
@@ -4993,6 +5184,16 @@
 	)
 	(wire
 		(pts
+			(xy 311.15 134.62) (xy 327.66 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c87a0d7e-9cf0-41de-9e6b-0c7c9f0e6916")
+	)
+	(wire
+		(pts
 			(xy 83.82 128.27) (xy 93.98 128.27)
 		)
 		(stroke
@@ -5030,6 +5231,16 @@
 			(type default)
 		)
 		(uuid "ca0c695b-68f0-4e3f-82d5-31a0cee6b211")
+	)
+	(wire
+		(pts
+			(xy 312.42 149.86) (xy 312.42 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba6ba6e-24f6-4fcc-8f28-0420a51330d5")
 	)
 	(wire
 		(pts
@@ -5163,6 +5374,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 130.81) (xy 327.66 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e4ab6b-5a50-4bb9-a970-27009bafa15a")
+	)
+	(wire
+		(pts
 			(xy 377.19 104.14) (xy 373.38 100.33)
 		)
 		(stroke
@@ -5173,13 +5394,13 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 123.19) (xy 314.96 123.19)
+			(xy 377.19 104.14) (xy 388.62 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d691e8a6-edd8-41f9-becd-411ccd90d33e")
+		(uuid "d684066e-4be3-4efd-8e5f-6b1529db1f5b")
 	)
 	(wire
 		(pts
@@ -5233,6 +5454,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 107.95) (xy 320.04 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd362a17-93df-4566-9323-956fcb322a01")
+	)
+	(wire
+		(pts
 			(xy 144.78 184.15) (xy 154.94 184.15)
 		)
 		(stroke
@@ -5250,16 +5481,6 @@
 			(type default)
 		)
 		(uuid "dd556dde-3a5a-434a-86e4-f42802a7d30c")
-	)
-	(wire
-		(pts
-			(xy 320.04 107.95) (xy 327.66 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de5b900e-50b8-4c97-af52-369d2192871e")
 	)
 	(wire
 		(pts
@@ -5303,36 +5524,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 130.81) (xy 312.42 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b59831-f855-4ed3-a827-eaf05c92de8f")
-	)
-	(wire
-		(pts
-			(xy 298.45 107.95) (xy 320.04 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3cc4640-a7fe-495e-8b10-ffa8caaed0a9")
-	)
-	(wire
-		(pts
-			(xy 316.23 119.38) (xy 327.66 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e423c369-4aa4-42a7-bd85-5aa1381b8bd6")
-	)
-	(wire
-		(pts
 			(xy 195.58 203.2) (xy 195.58 204.47)
 		)
 		(stroke
@@ -5363,16 +5554,6 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 96.52) (xy 374.65 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e55d6e93-e52c-438f-9338-1fb6f0f5b711")
-	)
-	(wire
-		(pts
 			(xy 119.38 142.24) (xy 119.38 170.18)
 		)
 		(stroke
@@ -5400,6 +5581,16 @@
 			(type default)
 		)
 		(uuid "e68f46eb-dd5b-46be-8654-d3c80d3f6a43")
+	)
+	(wire
+		(pts
+			(xy 307.34 123.19) (xy 314.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a774ca-f498-404a-9b87-1d043ec41514")
 	)
 	(wire
 		(pts
@@ -5483,6 +5674,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 152.4) (xy 304.8 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef41fc6e-ac58-4056-ac78-19047da5a913")
+	)
+	(wire
+		(pts
 			(xy 93.98 128.27) (xy 104.14 128.27)
 		)
 		(stroke
@@ -5510,16 +5711,6 @@
 			(type default)
 		)
 		(uuid "f06e23fd-129c-4e34-b75f-1c089552af21")
-	)
-	(wire
-		(pts
-			(xy 321.31 104.14) (xy 327.66 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f318b678-a20b-458d-a1e3-19f2de0cbd4c")
 	)
 	(wire
 		(pts
@@ -5553,16 +5744,6 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 88.9) (xy 374.65 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4834066-8747-4017-a728-72a4643bad4a")
-	)
-	(wire
-		(pts
 			(xy 99.06 58.42) (xy 99.06 86.36)
 		)
 		(stroke
@@ -5583,6 +5764,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 115.57) (xy 381 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61b71b2-8f1d-47ff-9af8-2240f5bb9389")
+	)
+	(wire
+		(pts
 			(xy 170.18 114.3) (xy 170.18 170.18)
 		)
 		(stroke
@@ -5600,26 +5791,6 @@
 			(type default)
 		)
 		(uuid "f784bdff-df3f-4301-886a-a54f5c036524")
-	)
-	(wire
-		(pts
-			(xy 284.48 187.96) (xy 284.48 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7ef9712-7409-4133-b67d-cb60b76a2bda")
-	)
-	(wire
-		(pts
-			(xy 312.42 130.81) (xy 327.66 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8a35ce1-b0f2-4f5f-b953-c03652332565")
 	)
 	(wire
 		(pts
@@ -5663,6 +5834,16 @@
 	)
 	(wire
 		(pts
+			(xy 311.15 137.16) (xy 327.66 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc65a0d9-f459-4da2-b4ee-f8abea097b11")
+	)
+	(wire
+		(pts
 			(xy 175.26 91.44) (xy 175.26 92.71)
 		)
 		(stroke
@@ -5670,6 +5851,16 @@
 			(type default)
 		)
 		(uuid "fc973137-dcf4-438d-b010-b8d4410ab0ba")
+	)
+	(wire
+		(pts
+			(xy 316.23 119.38) (xy 327.66 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc80540-e5fe-4181-b05a-92b7bc70aa2a")
 	)
 	(wire
 		(pts
@@ -5710,6 +5901,46 @@
 			(type default)
 		)
 		(uuid "feee88cf-53ff-40ef-a028-d45460ea0863")
+	)
+	(label "SDA"
+		(at 331.47 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3962ee28-2310-460e-aee1-c9789db6689f")
+	)
+	(label "SCL"
+		(at 304.8 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e814b46-2f13-47bc-937f-6abbdfadf2cc")
+	)
+	(label "SCL"
+		(at 331.47 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac3ff13b-eb08-4cb4-81ec-3d4a5ab3c39d")
+	)
+	(label "SDA"
+		(at 304.8 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3f16602-9ad3-420e-beec-442256e9ba5b")
 	)
 	(global_label "Col 0"
 		(shape input)
@@ -5843,6 +6074,28 @@
 			)
 		)
 	)
+	(global_label "Col 8"
+		(shape input)
+		(at 307.34 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "180ff2c0-0f78-4d91-b2e5-9145cca2a43d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 299.0935 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Col 3"
 		(shape input)
 		(at 388.62 92.71 0)
@@ -5909,6 +6162,28 @@
 			)
 		)
 	)
+	(global_label "Col 11"
+		(shape input)
+		(at 307.34 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "37f9e15c-aeb2-4c97-9bd8-c25fee6c3b15")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.884 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Col 6"
 		(shape input)
 		(at 109.22 48.26 90)
@@ -5927,28 +6202,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Col 14"
-		(shape input)
-		(at 298.45 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "480b89fb-cbe6-4468-9351-45c73e8fa8db")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.994 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -5975,9 +6228,9 @@
 			)
 		)
 	)
-	(global_label "Col 13"
+	(global_label "Col 10"
 		(shape input)
-		(at 298.45 107.95 180)
+		(at 307.34 119.38 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5985,9 +6238,9 @@
 			)
 			(justify right)
 		)
-		(uuid "4ef79f9f-fa58-452f-8e5c-e3dec1733d86")
+		(uuid "54bbfb13-f55e-4b84-9149-b5416388d743")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.994 107.95 0)
+			(at 297.884 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6010,6 +6263,50 @@
 		(uuid "58286788-dd88-4811-9ef4-28f9ce58312d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 298.4282 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 13"
+		(shape input)
+		(at 307.34 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58f757cc-45e0-4d2a-880a-dacc46cdcd40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.884 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 7"
+		(shape input)
+		(at 308.61 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c356fd9-d313-4aa9-a690-fe3baacc5352")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 300.3635 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6173,50 +6470,6 @@
 			)
 		)
 	)
-	(global_label "Col 9"
-		(shape input)
-		(at 298.45 123.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "87ab63eb-0555-4519-a005-671b647dd153")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 290.2035 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Col 11"
-		(shape input)
-		(at 298.45 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8fe99d9c-8dae-4cd2-b8c4-7aed5da58598")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.994 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Col 14"
 		(shape input)
 		(at 190.5 48.26 90)
@@ -6279,28 +6532,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Col 8"
-		(shape input)
-		(at 298.45 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ae5ee5df-98ae-4cd2-8f02-2be874a25682")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 290.2035 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -6393,6 +6624,28 @@
 			)
 		)
 	)
+	(global_label "Col 15"
+		(shape input)
+		(at 381 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b89f8611-b163-4e0f-926d-2f52b55bb836")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 390.456 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Col 1"
 		(shape input)
 		(at 388.62 85.09 0)
@@ -6437,9 +6690,31 @@
 			)
 		)
 	)
-	(global_label "Col 10"
+	(global_label "Col 15"
 		(shape input)
-		(at 298.45 119.38 180)
+		(at 200.66 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc781b0c-7bd4-4a1e-9b42-5d4368ba4247")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 38.804 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 14"
+		(shape input)
+		(at 307.34 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6447,9 +6722,31 @@
 			)
 			(justify right)
 		)
-		(uuid "c2cdc784-6824-4581-9c0f-7ec06c74269b")
+		(uuid "bdde09e1-dedf-4c12-8d41-1a2740a1ae87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.994 119.38 0)
+			(at 297.884 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Col 12"
+		(shape input)
+		(at 307.34 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "beb74b00-31a6-4706-a70f-0015b3da212f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.884 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6824,7 @@
 	)
 	(global_label "Row 0"
 		(shape input)
-		(at 205.74 72.39 0)
+		(at 215.9 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6537,7 +6834,7 @@
 		)
 		(uuid "d11b997a-348f-4e28-b62a-3b543b110b32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.6518 72.39 0)
+			(at 224.8118 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6547,9 +6844,9 @@
 			)
 		)
 	)
-	(global_label "Col 7"
+	(global_label "Col 9"
 		(shape input)
-		(at 298.45 130.81 180)
+		(at 307.34 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6557,9 +6854,9 @@
 			)
 			(justify right)
 		)
-		(uuid "dd5f06d4-c241-45c2-89ba-3cc4a71c5a11")
+		(uuid "f6ae61dd-1da2-44ce-9612-4677dd3f5782")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 290.2035 130.81 0)
+			(at 299.0935 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,28 +6910,6 @@
 			)
 		)
 	)
-	(global_label "Col 12"
-		(shape input)
-		(at 298.45 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffa3e58d-2c0d-49de-b286-cd538fdafb4b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.994 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "keyswitch:Placeholder_Keyswitch")
 		(at 132.08 172.72 0)
@@ -6645,7 +6920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0282b76c-d2c4-43b7-8ee7-99b12a71fa76")
-		(property "Reference" "S67"
+		(property "Reference" "S69"
 			(at 132.08 165.1 0)
 			(effects
 				(font
@@ -6661,7 +6936,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 132.08 172.72 0)
 			(effects
 				(font
@@ -6697,7 +6972,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S67")
+					(reference "S69")
 					(unit 1)
 				)
 			)
@@ -6713,7 +6988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02aff984-cfd7-458a-8c07-5f651bf0e33f")
-		(property "Reference" "S76"
+		(property "Reference" "S78"
 			(at 101.6 193.04 0)
 			(effects
 				(font
@@ -6729,7 +7004,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-6.25U"
 			(at 101.6 200.66 0)
 			(effects
 				(font
@@ -6765,7 +7040,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S76")
+					(reference "S78")
 					(unit 1)
 				)
 			)
@@ -6781,7 +7056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "037edc14-00d9-49cb-afda-decb84c72015")
-		(property "Reference" "S80"
+		(property "Reference" "S82"
 			(at 172.72 193.04 0)
 			(effects
 				(font
@@ -6797,7 +7072,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 172.72 200.66 0)
 			(effects
 				(font
@@ -6833,7 +7108,77 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S80")
+					(reference "S82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 312.42 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03ff14ab-76f8-4379-b039-f5b4edc3c387")
+		(property "Reference" "R2"
+			(at 314.96 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 314.96 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 310.642 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 312.42 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58921de2-2952-4493-8f52-e155841439f2")
+		)
+		(pin "2"
+			(uuid "0b34d351-1ccc-4f2c-b084-1710aa2225fd")
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6849,7 +7194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ce50fa8-5409-4c59-b01e-3a8c8503bd9b")
-		(property "Reference" "S65"
+		(property "Reference" "S67"
 			(at 111.76 165.1 0)
 			(effects
 				(font
@@ -6865,7 +7210,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 111.76 172.72 0)
 			(effects
 				(font
@@ -6901,7 +7246,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S65")
+					(reference "S67")
 					(unit 1)
 				)
 			)
@@ -6917,7 +7262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ec26c9a-eabd-4bac-935b-1912ef82f7a0")
-		(property "Reference" "S27"
+		(property "Reference" "S29"
 			(at 172.72 81.28 0)
 			(effects
 				(font
@@ -6933,7 +7278,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 172.72 88.9 0)
 			(effects
 				(font
@@ -6969,7 +7314,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S27")
+					(reference "S29")
 					(unit 1)
 				)
 			)
@@ -6985,7 +7330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10986d32-9167-4049-814b-146ef8211528")
-		(property "Reference" "D23"
+		(property "Reference" "D25"
 			(at 137.16 95.2499 90)
 			(effects
 				(font
@@ -7003,7 +7348,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 134.62 96.52 0)
 			(effects
 				(font
@@ -7057,7 +7402,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D23")
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -7073,7 +7418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "123a4bb1-92c1-4a82-8830-f0d6bc6a8aac")
-		(property "Reference" "S73"
+		(property "Reference" "S75"
 			(at 50.8 193.04 0)
 			(effects
 				(font
@@ -7089,7 +7434,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.25U"
 			(at 50.8 200.66 0)
 			(effects
 				(font
@@ -7125,7 +7470,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S73")
+					(reference "S75")
 					(unit 1)
 				)
 			)
@@ -7141,7 +7486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "140639e8-1a33-4862-ae9f-496f8c240690")
-		(property "Reference" "S35"
+		(property "Reference" "S37"
 			(at 101.6 109.22 0)
 			(effects
 				(font
@@ -7157,7 +7502,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 101.6 116.84 0)
 			(effects
 				(font
@@ -7193,7 +7538,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S35")
+					(reference "S37")
 					(unit 1)
 				)
 			)
@@ -7209,7 +7554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "144b5896-19ca-4a4a-9ccf-a6c405853516")
-		(property "Reference" "S72"
+		(property "Reference" "S74"
 			(at 193.04 165.1 0)
 			(effects
 				(font
@@ -7225,7 +7570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 172.72 0)
 			(effects
 				(font
@@ -7261,7 +7606,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S72")
+					(reference "S74")
 					(unit 1)
 				)
 			)
@@ -7277,7 +7622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "148cc816-b51a-41d5-af57-1a2c2fc64f7c")
-		(property "Reference" "D76"
+		(property "Reference" "D78"
 			(at 106.68 207.0099 90)
 			(effects
 				(font
@@ -7297,7 +7642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 208.28 0)
 			(effects
 				(font
@@ -7351,7 +7696,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D76")
+					(reference "D78")
 					(unit 1)
 				)
 			)
@@ -7367,7 +7712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14d37a64-07d7-4feb-8f29-89fffea950af")
-		(property "Reference" "S8"
+		(property "Reference" "S9"
 			(at 132.08 53.34 0)
 			(effects
 				(font
@@ -7383,7 +7728,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -7419,7 +7764,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S8")
+					(reference "S9")
 					(unit 1)
 				)
 			)
@@ -7435,7 +7780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "154d9119-fb0a-42fe-b890-c214c60d4c7d")
-		(property "Reference" "D73"
+		(property "Reference" "D75"
 			(at 55.88 207.0099 90)
 			(effects
 				(font
@@ -7453,7 +7798,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 208.28 0)
 			(effects
 				(font
@@ -7507,7 +7852,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D73")
+					(reference "D75")
 					(unit 1)
 				)
 			)
@@ -7523,7 +7868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18694049-f82c-433a-9846-9046c6c7a00c")
-		(property "Reference" "S58"
+		(property "Reference" "S60"
 			(at 193.04 137.16 0)
 			(effects
 				(font
@@ -7539,7 +7884,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 144.78 0)
 			(effects
 				(font
@@ -7575,7 +7920,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S58")
+					(reference "S60")
 					(unit 1)
 				)
 			)
@@ -7591,7 +7936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a0ad9eb-4f69-41d9-aa64-a2ea7db2d805")
-		(property "Reference" "D35"
+		(property "Reference" "D37"
 			(at 106.68 123.1899 90)
 			(effects
 				(font
@@ -7609,7 +7954,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 124.46 0)
 			(effects
 				(font
@@ -7663,7 +8008,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D35")
+					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -7679,7 +8024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a3678ef-ca82-4a26-a55a-9b011336ce6f")
-		(property "Reference" "S62"
+		(property "Reference" "S64"
 			(at 81.28 165.1 0)
 			(effects
 				(font
@@ -7695,7 +8040,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 81.28 172.72 0)
 			(effects
 				(font
@@ -7731,7 +8076,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S62")
+					(reference "S64")
 					(unit 1)
 				)
 			)
@@ -7747,7 +8092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a4eec0b-67f1-46f1-ac0e-71067ffa12ab")
-		(property "Reference" "S81"
+		(property "Reference" "S83"
 			(at 182.88 193.04 0)
 			(effects
 				(font
@@ -7763,7 +8108,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 182.88 200.66 0)
 			(effects
 				(font
@@ -7799,7 +8144,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S81")
+					(reference "S83")
 					(unit 1)
 				)
 			)
@@ -7815,7 +8160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ab523fa-87c4-420b-aa1b-2b1d8e77ada9")
-		(property "Reference" "S60"
+		(property "Reference" "S62"
 			(at 60.96 165.1 0)
 			(effects
 				(font
@@ -7831,7 +8176,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 60.96 172.72 0)
 			(effects
 				(font
@@ -7867,7 +8212,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S60")
+					(reference "S62")
 					(unit 1)
 				)
 			)
@@ -7883,7 +8228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c7b5ffe-3293-4d34-8223-f515cfa22a32")
-		(property "Reference" "D50"
+		(property "Reference" "D52"
 			(at 106.68 151.1299 90)
 			(effects
 				(font
@@ -7901,7 +8246,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 152.4 0)
 			(effects
 				(font
@@ -7955,7 +8300,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D50")
+					(reference "D52")
 					(unit 1)
 				)
 			)
@@ -7971,7 +8316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ce66849-359d-4d24-b55b-61f84ca8d9ed")
-		(property "Reference" "S30"
+		(property "Reference" "S32"
 			(at 50.8 109.22 0)
 			(effects
 				(font
@@ -7987,7 +8332,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.5U"
 			(at 50.8 116.84 0)
 			(effects
 				(font
@@ -8023,7 +8368,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S30")
+					(reference "S32")
 					(unit 1)
 				)
 			)
@@ -8039,7 +8384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d11e6f7-5f64-49ff-ad84-1d31f09d6a93")
-		(property "Reference" "D37"
+		(property "Reference" "D39"
 			(at 127 123.1899 90)
 			(effects
 				(font
@@ -8057,7 +8402,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 124.46 124.46 0)
 			(effects
 				(font
@@ -8111,7 +8456,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D37")
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -8127,7 +8472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e0731ed-226f-4bb1-95c8-ca5a53878445")
-		(property "Reference" "D57"
+		(property "Reference" "D59"
 			(at 187.96 151.1299 90)
 			(effects
 				(font
@@ -8145,7 +8490,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 152.4 0)
 			(effects
 				(font
@@ -8199,7 +8544,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D57")
+					(reference "D59")
 					(unit 1)
 				)
 			)
@@ -8215,7 +8560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fd03cd2-e763-4f10-b3d9-9832c848d3bb")
-		(property "Reference" "S48"
+		(property "Reference" "S50"
 			(at 81.28 137.16 0)
 			(effects
 				(font
@@ -8231,7 +8576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 81.28 144.78 0)
 			(effects
 				(font
@@ -8267,7 +8612,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S48")
+					(reference "S50")
 					(unit 1)
 				)
 			)
@@ -8283,7 +8628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21e9bcf2-5ec2-4109-82cf-35a435aeec14")
-		(property "Reference" "D62"
+		(property "Reference" "D64"
 			(at 86.36 179.0699 90)
 			(effects
 				(font
@@ -8301,7 +8646,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 180.34 0)
 			(effects
 				(font
@@ -8355,7 +8700,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D62")
+					(reference "D64")
 					(unit 1)
 				)
 			)
@@ -8371,7 +8716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2290dde8-1750-4f1f-9cb7-af77d68b5c02")
-		(property "Reference" "S1"
+		(property "Reference" "S2"
 			(at 60.96 53.34 0)
 			(effects
 				(font
@@ -8387,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 60.96 60.96 0)
 			(effects
 				(font
@@ -8423,73 +8768,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 284.48 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "242ad13a-9efe-416e-b886-c5c827652224")
-		(property "Reference" "#PWR02"
-			(at 284.48 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 284.48 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 284.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 284.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 284.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc28f4ea-a439-4b7f-863f-ceda91e6cfa8")
-		)
-		(instances
-			(project ""
-				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "#PWR02")
+					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -8505,7 +8784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2552419f-6b17-4ba2-9b48-d92585134827")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 66.04 67.3099 90)
 			(effects
 				(font
@@ -8523,7 +8802,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 68.58 0)
 			(effects
 				(font
@@ -8577,7 +8856,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8593,7 +8872,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2681fa8c-f6d1-439f-91e2-d90a111ba53c")
-		(property "Reference" "S13"
+		(property "Reference" "S14"
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -8609,7 +8888,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 182.88 60.96 0)
 			(effects
 				(font
@@ -8645,7 +8924,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S13")
+					(reference "S14")
 					(unit 1)
 				)
 			)
@@ -8661,7 +8940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26b00fdc-656d-4c90-976b-668753b97555")
-		(property "Reference" "S37"
+		(property "Reference" "S39"
 			(at 121.92 109.22 0)
 			(effects
 				(font
@@ -8677,7 +8956,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 121.92 116.84 0)
 			(effects
 				(font
@@ -8713,7 +8992,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S37")
+					(reference "S39")
 					(unit 1)
 				)
 			)
@@ -8729,7 +9008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28b8d588-d057-4f86-b62f-f419adffd527")
-		(property "Reference" "D22"
+		(property "Reference" "D24"
 			(at 127 95.2499 90)
 			(effects
 				(font
@@ -8747,7 +9026,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 124.46 96.52 0)
 			(effects
 				(font
@@ -8801,7 +9080,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D22")
+					(reference "D24")
 					(unit 1)
 				)
 			)
@@ -8817,7 +9096,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a4d5d16-1d17-4e4a-8c82-c6fc5a3b6231")
-		(property "Reference" "S34"
+		(property "Reference" "S36"
 			(at 91.44 109.22 0)
 			(effects
 				(font
@@ -8833,7 +9112,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 91.44 116.84 0)
 			(effects
 				(font
@@ -8869,7 +9148,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S34")
+					(reference "S36")
 					(unit 1)
 				)
 			)
@@ -8885,7 +9164,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a8bd9d4-83b5-4af9-b77a-e365200725cc")
-		(property "Reference" "D34"
+		(property "Reference" "D36"
 			(at 96.52 123.1899 90)
 			(effects
 				(font
@@ -8903,7 +9182,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 93.98 124.46 0)
 			(effects
 				(font
@@ -8957,7 +9236,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D34")
+					(reference "D36")
 					(unit 1)
 				)
 			)
@@ -8973,7 +9252,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b8c5a15-0f0f-4fd8-89c5-7f1fbeb3a75f")
-		(property "Reference" "S38"
+		(property "Reference" "S40"
 			(at 132.08 109.22 0)
 			(effects
 				(font
@@ -8989,7 +9268,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 132.08 116.84 0)
 			(effects
 				(font
@@ -9025,7 +9304,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S38")
+					(reference "S40")
 					(unit 1)
 				)
 			)
@@ -9041,7 +9320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bf6b7f7-2d1b-4375-830b-f82be476eef7")
-		(property "Reference" "S22"
+		(property "Reference" "S24"
 			(at 121.92 81.28 0)
 			(effects
 				(font
@@ -9057,7 +9336,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 121.92 88.9 0)
 			(effects
 				(font
@@ -9093,7 +9372,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S22")
+					(reference "S24")
 					(unit 1)
 				)
 			)
@@ -9109,7 +9388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30c2d13c-b75a-4d92-b807-5fb474112fb8")
-		(property "Reference" "S70"
+		(property "Reference" "S72"
 			(at 172.72 165.1 0)
 			(effects
 				(font
@@ -9125,7 +9404,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.75U"
 			(at 172.72 172.72 0)
 			(effects
 				(font
@@ -9161,7 +9440,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S70")
+					(reference "S72")
 					(unit 1)
 				)
 			)
@@ -9177,7 +9456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31e01c58-fe15-4f3b-b6b1-dbe8878905af")
-		(property "Reference" "S63"
+		(property "Reference" "S65"
 			(at 91.44 165.1 0)
 			(effects
 				(font
@@ -9193,7 +9472,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 91.44 172.72 0)
 			(effects
 				(font
@@ -9229,7 +9508,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S63")
+					(reference "S65")
 					(unit 1)
 				)
 			)
@@ -9245,7 +9524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32bd4739-b77a-49ed-908f-b9bba9965f7c")
-		(property "Reference" "D80"
+		(property "Reference" "D82"
 			(at 177.8 207.0099 90)
 			(effects
 				(font
@@ -9263,7 +9542,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 175.26 208.28 0)
 			(effects
 				(font
@@ -9317,7 +9596,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D80")
+					(reference "D82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 203.2 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33ec76d6-15d8-4041-a446-60db8f0106d9")
+		(property "Reference" "H5"
+			(at 205.74 245.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 205.74 247.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 203.2 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 203.2 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -9333,7 +9676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34668b56-c52c-43de-9166-1c49ba2534c2")
-		(property "Reference" "D33"
+		(property "Reference" "D35"
 			(at 86.36 123.1899 90)
 			(effects
 				(font
@@ -9351,7 +9694,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 124.46 0)
 			(effects
 				(font
@@ -9405,7 +9748,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D33")
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -9421,7 +9764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "371d4bf6-2a26-4347-89c3-25a153627b95")
-		(property "Reference" "S78"
+		(property "Reference" "S80"
 			(at 152.4 193.04 0)
 			(effects
 				(font
@@ -9437,7 +9780,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 200.66 0)
 			(effects
 				(font
@@ -9473,7 +9816,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S78")
+					(reference "S80")
 					(unit 1)
 				)
 			)
@@ -9489,7 +9832,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a28f4e0-6d66-4255-80af-e8014ed612b1")
-		(property "Reference" "S50"
+		(property "Reference" "S52"
 			(at 101.6 137.16 0)
 			(effects
 				(font
@@ -9505,7 +9848,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 101.6 144.78 0)
 			(effects
 				(font
@@ -9541,7 +9884,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S50")
+					(reference "S52")
 					(unit 1)
 				)
 			)
@@ -9557,7 +9900,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c666fae-f696-44ce-b183-15725e34da54")
-		(property "Reference" "D14"
+		(property "Reference" "D15"
 			(at 198.12 67.3099 90)
 			(effects
 				(font
@@ -9575,7 +9918,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 68.58 0)
 			(effects
 				(font
@@ -9629,7 +9972,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D14")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -9645,7 +9988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3df8a737-872a-48c5-992d-d07192373a72")
-		(property "Reference" "S68"
+		(property "Reference" "S70"
 			(at 142.24 165.1 0)
 			(effects
 				(font
@@ -9661,7 +10004,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 172.72 0)
 			(effects
 				(font
@@ -9697,7 +10040,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S68")
+					(reference "S70")
 					(unit 1)
 				)
 			)
@@ -9713,7 +10056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f1f66a9-59cd-48b4-99ba-bfb3d7918bf9")
-		(property "Reference" "#PWR00"
+		(property "Reference" "#PWR01"
 			(at 355.6 55.88 0)
 			(effects
 				(font
@@ -9763,7 +10106,7 @@
 		(instances
 			(project ""
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "#PWR00")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9779,7 +10122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "409efc99-8760-493b-ae86-faf4e5a4ba53")
-		(property "Reference" "S66"
+		(property "Reference" "S68"
 			(at 121.92 165.1 0)
 			(effects
 				(font
@@ -9795,7 +10138,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 121.92 172.72 0)
 			(effects
 				(font
@@ -9831,7 +10174,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S66")
+					(reference "S68")
 					(unit 1)
 				)
 			)
@@ -9847,7 +10190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42b02de1-185f-4ba8-b71d-b59a71a077bc")
-		(property "Reference" "D21"
+		(property "Reference" "D23"
 			(at 116.84 95.2499 90)
 			(effects
 				(font
@@ -9865,7 +10208,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 114.3 96.52 0)
 			(effects
 				(font
@@ -9919,7 +10262,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D21")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -9935,7 +10278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4348c72f-e94d-4ebd-a11f-8cbdabbc29eb")
-		(property "Reference" "S41"
+		(property "Reference" "S43"
 			(at 162.56 109.22 0)
 			(effects
 				(font
@@ -9951,7 +10294,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 162.56 116.84 0)
 			(effects
 				(font
@@ -9987,7 +10330,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S41")
+					(reference "S43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 205.74 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43664b85-303b-487c-a36b-81cfe6543b53")
+		(property "Reference" "H10"
+			(at 208.28 257.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 208.28 260.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 205.74 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 205.74 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H10")
 					(unit 1)
 				)
 			)
@@ -10003,7 +10410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "450c4f85-4323-48ca-9787-ffdb79e658e8")
-		(property "Reference" "S32"
+		(property "Reference" "S34"
 			(at 71.12 109.22 0)
 			(effects
 				(font
@@ -10019,7 +10426,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 71.12 116.84 0)
 			(effects
 				(font
@@ -10055,7 +10462,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S32")
+					(reference "S34")
 					(unit 1)
 				)
 			)
@@ -10071,7 +10478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "456faba0-e899-42c0-b238-63415eb27261")
-		(property "Reference" "D40"
+		(property "Reference" "D42"
 			(at 157.48 123.1899 90)
 			(effects
 				(font
@@ -10089,7 +10496,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 124.46 0)
 			(effects
 				(font
@@ -10143,7 +10550,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D40")
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 166.37 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47145e56-6a3d-4aa1-b232-cfeb322c8d1e")
+		(property "Reference" "H8"
+			(at 168.91 257.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 168.91 260.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 166.37 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 166.37 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -10159,7 +10630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "482d7ca8-671a-4822-b7aa-beff620b95d6")
-		(property "Reference" "S0"
+		(property "Reference" "S1"
 			(at 50.8 53.34 0)
 			(effects
 				(font
@@ -10175,7 +10646,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 50.8 60.96 0)
 			(effects
 				(font
@@ -10211,7 +10682,7 @@
 		(instances
 			(project ""
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S0")
+					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -10227,7 +10698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48fe3902-545a-43fc-8c64-b483db58ceda")
-		(property "Reference" "D69"
+		(property "Reference" "D71"
 			(at 157.48 179.0699 90)
 			(effects
 				(font
@@ -10245,7 +10716,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 180.34 0)
 			(effects
 				(font
@@ -10299,7 +10770,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D69")
+					(reference "D71")
 					(unit 1)
 				)
 			)
@@ -10315,7 +10786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bdac9e3-cae4-4a67-b815-3b9335f4b154")
-		(property "Reference" "S5"
+		(property "Reference" "S6"
 			(at 101.6 53.34 0)
 			(effects
 				(font
@@ -10331,7 +10802,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 101.6 60.96 0)
 			(effects
 				(font
@@ -10367,7 +10838,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S5")
+					(reference "S6")
 					(unit 1)
 				)
 			)
@@ -10383,7 +10854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c99fb2d-b3c4-44d6-a839-d092cd0bbd82")
-		(property "Reference" "S24"
+		(property "Reference" "S26"
 			(at 142.24 81.28 0)
 			(effects
 				(font
@@ -10399,7 +10870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 88.9 0)
 			(effects
 				(font
@@ -10435,7 +10906,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S24")
+					(reference "S26")
 					(unit 1)
 				)
 			)
@@ -10451,7 +10922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4eee1d40-2d46-48a6-b26c-2623cfe40699")
-		(property "Reference" "D71"
+		(property "Reference" "D73"
 			(at 187.96 179.0699 90)
 			(effects
 				(font
@@ -10469,7 +10940,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 180.34 0)
 			(effects
 				(font
@@ -10523,7 +10994,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D71")
+					(reference "D73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 185.42 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f981d1f-c5a5-4cc3-a778-e3d9502c70f3")
+		(property "Reference" "H4"
+			(at 187.96 245.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 187.96 247.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 185.42 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 185.42 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -10539,7 +11074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fce3f8b-d5a4-4b7c-b680-89e4531952aa")
-		(property "Reference" "A0"
+		(property "Reference" "A1"
 			(at 352.6633 132.08 0)
 			(effects
 				(font
@@ -10707,7 +11242,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "A0")
+					(reference "A1")
 					(unit 1)
 				)
 			)
@@ -10723,7 +11258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fec8430-798d-4436-b0ab-8869bf3be719")
-		(property "Reference" "D70"
+		(property "Reference" "D72"
 			(at 177.8 179.0699 90)
 			(effects
 				(font
@@ -10741,7 +11276,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 175.26 180.34 0)
 			(effects
 				(font
@@ -10795,7 +11330,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D70")
+					(reference "D72")
 					(unit 1)
 				)
 			)
@@ -10811,7 +11346,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "502e0f26-e44a-428d-8c17-1ff32021a4c3")
-		(property "Reference" "S69"
+		(property "Reference" "S71"
 			(at 152.4 165.1 0)
 			(effects
 				(font
@@ -10827,7 +11362,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 172.72 0)
 			(effects
 				(font
@@ -10863,7 +11398,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S69")
+					(reference "S71")
 					(unit 1)
 				)
 			)
@@ -10879,7 +11414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50a2fac7-0118-4789-bd83-24764d937306")
-		(property "Reference" "D18"
+		(property "Reference" "D20"
 			(at 86.36 95.2499 90)
 			(effects
 				(font
@@ -10897,7 +11432,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 96.52 0)
 			(effects
 				(font
@@ -10951,7 +11486,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D18")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -10967,7 +11502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51c8504d-9eb2-4fbf-9d57-75f63b8f3630")
-		(property "Reference" "S82"
+		(property "Reference" "S84"
 			(at 193.04 193.04 0)
 			(effects
 				(font
@@ -10983,7 +11518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 200.66 0)
 			(effects
 				(font
@@ -11019,7 +11554,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S82")
+					(reference "S84")
 					(unit 1)
 				)
 			)
@@ -11035,7 +11570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51fd694c-bcda-4840-b093-8a2498804af3")
-		(property "Reference" "S45"
+		(property "Reference" "S47"
 			(at 50.8 137.16 0)
 			(effects
 				(font
@@ -11051,7 +11586,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.75U"
 			(at 50.8 144.78 0)
 			(effects
 				(font
@@ -11087,7 +11622,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S45")
+					(reference "S47")
 					(unit 1)
 				)
 			)
@@ -11103,7 +11638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5225ea03-9111-4884-957f-058a0867c29f")
-		(property "Reference" "D30"
+		(property "Reference" "D32"
 			(at 55.88 123.1899 90)
 			(effects
 				(font
@@ -11121,7 +11656,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 124.46 0)
 			(effects
 				(font
@@ -11175,7 +11710,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D30")
+					(reference "D32")
 					(unit 1)
 				)
 			)
@@ -11191,7 +11726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5348c841-deb7-46d7-b803-82cf0096b3ff")
-		(property "Reference" "S77"
+		(property "Reference" "S79"
 			(at 142.24 193.04 0)
 			(effects
 				(font
@@ -11207,7 +11742,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 200.66 0)
 			(effects
 				(font
@@ -11243,7 +11778,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S77")
+					(reference "S79")
 					(unit 1)
 				)
 			)
@@ -11259,7 +11794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "540a28e6-b15c-420c-9249-d91d3ac03390")
-		(property "Reference" "S71"
+		(property "Reference" "S73"
 			(at 182.88 165.1 0)
 			(effects
 				(font
@@ -11275,7 +11810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 182.88 172.72 0)
 			(effects
 				(font
@@ -11311,7 +11846,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S71")
+					(reference "S73")
 					(unit 1)
 				)
 			)
@@ -11327,7 +11862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55445d47-8b69-4320-80f9-acfbe17b2873")
-		(property "Reference" "S21"
+		(property "Reference" "S23"
 			(at 111.76 81.28 0)
 			(effects
 				(font
@@ -11343,7 +11878,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 111.76 88.9 0)
 			(effects
 				(font
@@ -11379,7 +11914,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S21")
+					(reference "S23")
 					(unit 1)
 				)
 			)
@@ -11395,7 +11930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "557ee0e0-f391-4d9e-a3c3-00210c55247d")
-		(property "Reference" "D15"
+		(property "Reference" "D17"
 			(at 55.88 95.2499 90)
 			(effects
 				(font
@@ -11413,7 +11948,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 96.52 0)
 			(effects
 				(font
@@ -11467,7 +12002,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D15")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -11483,7 +12018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59e85866-7552-48d3-8b57-473e603ed6d8")
-		(property "Reference" "S15"
+		(property "Reference" "S17"
 			(at 50.8 81.28 0)
 			(effects
 				(font
@@ -11499,7 +12034,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 50.8 88.9 0)
 			(effects
 				(font
@@ -11535,7 +12070,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S15")
+					(reference "S17")
 					(unit 1)
 				)
 			)
@@ -11551,7 +12086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a57858e-d7e9-4736-8ad2-1a02ac9fcd2f")
-		(property "Reference" "S40"
+		(property "Reference" "S42"
 			(at 152.4 109.22 0)
 			(effects
 				(font
@@ -11567,7 +12102,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 116.84 0)
 			(effects
 				(font
@@ -11603,7 +12138,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S40")
+					(reference "S42")
 					(unit 1)
 				)
 			)
@@ -11619,7 +12154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a6782aa-ffda-41c1-87a0-3b7435423d03")
-		(property "Reference" "S3"
+		(property "Reference" "S4"
 			(at 81.28 53.34 0)
 			(effects
 				(font
@@ -11635,7 +12170,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 81.28 60.96 0)
 			(effects
 				(font
@@ -11671,7 +12206,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S3")
+					(reference "S4")
 					(unit 1)
 				)
 			)
@@ -11687,7 +12222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ac41c01-4322-4ea2-8c7c-29daf3feecf4")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 76.2 67.3099 90)
 			(effects
 				(font
@@ -11705,7 +12240,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 68.58 0)
 			(effects
 				(font
@@ -11759,7 +12294,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -11775,7 +12310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ba13dad-9604-42dc-9a15-9022f7cd2191")
-		(property "Reference" "S56"
+		(property "Reference" "S58"
 			(at 162.56 137.16 0)
 			(effects
 				(font
@@ -11791,7 +12326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 162.56 144.78 0)
 			(effects
 				(font
@@ -11827,7 +12362,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S56")
+					(reference "S58")
 					(unit 1)
 				)
 			)
@@ -11843,7 +12378,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bea24ca-7b22-4ad6-8cfd-a6bbb6642cf2")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 106.68 67.3099 90)
 			(effects
 				(font
@@ -11861,7 +12396,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 68.58 0)
 			(effects
 				(font
@@ -11915,7 +12450,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D5")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -11931,7 +12466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e56952c-298e-475d-8907-418d4eaaf923")
-		(property "Reference" "D16"
+		(property "Reference" "D18"
 			(at 66.04 95.2499 90)
 			(effects
 				(font
@@ -11949,7 +12484,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 96.52 0)
 			(effects
 				(font
@@ -12003,7 +12538,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D16")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -12019,7 +12554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f64a7c2-0ed7-439b-94c0-f9aabc91c196")
-		(property "Reference" "S43"
+		(property "Reference" "S45"
 			(at 182.88 109.22 0)
 			(effects
 				(font
@@ -12035,7 +12570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.5U"
 			(at 182.88 116.84 0)
 			(effects
 				(font
@@ -12071,7 +12606,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S43")
+					(reference "S45")
 					(unit 1)
 				)
 			)
@@ -12087,7 +12622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60ca5596-a7e0-4d5d-9047-7f144187e67f")
-		(property "Reference" "S74"
+		(property "Reference" "S76"
 			(at 60.96 193.04 0)
 			(effects
 				(font
@@ -12103,7 +12638,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.25U"
 			(at 60.96 200.66 0)
 			(effects
 				(font
@@ -12139,7 +12674,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S74")
+					(reference "S76")
 					(unit 1)
 				)
 			)
@@ -12155,7 +12690,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61cc4dda-03f0-4b64-ba3c-3b721b00cb7d")
-		(property "Reference" "D58"
+		(property "Reference" "D60"
 			(at 198.12 151.1299 90)
 			(effects
 				(font
@@ -12173,7 +12708,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 152.4 0)
 			(effects
 				(font
@@ -12227,148 +12762,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812MINI")
-		(at 284.48 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "620315b7-131b-4117-bb39-fb3e7a7662a7")
-		(property "Reference" "L0"
-			(at 296.926 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812MINI"
-			(at 297.18 176.4598 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 285.75 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 287.02 189.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 284.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c6e28399-ba1d-438d-a14c-847b9281ef24")
-		)
-		(pin "1"
-			(uuid "152260a3-fcbf-473e-a781-58ec83677c42")
-		)
-		(pin "3"
-			(uuid "1a74d215-f7be-4155-828b-6b811637cf1f")
-		)
-		(pin "4"
-			(uuid "3a5c7b8c-61c6-4e28-8077-43d40b9efce8")
-		)
-		(instances
-			(project ""
-				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "L0")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 284.48 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62ecdbbf-fd46-4875-803b-b4f1ea037371")
-		(property "Reference" "#PWR03"
-			(at 284.48 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 284.48 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 284.48 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 284.48 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 284.48 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "da7d5087-f232-42fe-a6e3-79c6df931c9a")
-		)
-		(instances
-			(project ""
-				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "#PWR03")
+					(reference "D60")
 					(unit 1)
 				)
 			)
@@ -12384,7 +12778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6454cd6a-77d9-4ad3-b012-69fd7ad7e958")
-		(property "Reference" "D36"
+		(property "Reference" "D38"
 			(at 116.84 123.1899 90)
 			(effects
 				(font
@@ -12402,7 +12796,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 114.3 124.46 0)
 			(effects
 				(font
@@ -12456,7 +12850,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D36")
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -12472,7 +12866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64f72aaf-77c4-4e9d-9705-629f595c8a85")
-		(property "Reference" "S16"
+		(property "Reference" "S18"
 			(at 60.96 81.28 0)
 			(effects
 				(font
@@ -12488,7 +12882,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 60.96 88.9 0)
 			(effects
 				(font
@@ -12524,7 +12918,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S16")
+					(reference "S18")
 					(unit 1)
 				)
 			)
@@ -12540,7 +12934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "651621a8-818f-439b-b843-abc9e8f1ec0f")
-		(property "Reference" "D67"
+		(property "Reference" "D69"
 			(at 137.16 179.0699 90)
 			(effects
 				(font
@@ -12558,7 +12952,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 134.62 180.34 0)
 			(effects
 				(font
@@ -12612,7 +13006,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D67")
+					(reference "D69")
 					(unit 1)
 				)
 			)
@@ -12628,7 +13022,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6659386d-2c56-469d-a321-bee8ab150f71")
-		(property "Reference" "S36"
+		(property "Reference" "S38"
 			(at 111.76 109.22 0)
 			(effects
 				(font
@@ -12644,7 +13038,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 111.76 116.84 0)
 			(effects
 				(font
@@ -12680,7 +13074,73 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S36")
+					(reference "S38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 304.8 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6666e4a3-1171-41a4-8f48-7f3d3af2ef67")
+		(property "Reference" "#PWR05"
+			(at 304.8 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 304.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 304.8 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dc82e99-e236-4221-b5bb-0fa0f7aaafe3")
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -12696,7 +13156,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66d414f0-dec7-44ec-9837-a06e2bc07060")
-		(property "Reference" "S18"
+		(property "Reference" "S20"
 			(at 81.28 81.28 0)
 			(effects
 				(font
@@ -12712,7 +13172,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 81.28 88.9 0)
 			(effects
 				(font
@@ -12748,7 +13208,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S18")
+					(reference "S20")
 					(unit 1)
 				)
 			)
@@ -12764,7 +13224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66f5419d-d99b-4f3f-a7a7-1e237472274b")
-		(property "Reference" "S49"
+		(property "Reference" "S51"
 			(at 91.44 137.16 0)
 			(effects
 				(font
@@ -12780,7 +13240,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 91.44 144.78 0)
 			(effects
 				(font
@@ -12816,7 +13276,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S49")
+					(reference "S51")
 					(unit 1)
 				)
 			)
@@ -12832,7 +13292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "675e3f62-3608-46cf-833c-42daf131fe59")
-		(property "Reference" "S17"
+		(property "Reference" "S19"
 			(at 71.12 81.28 0)
 			(effects
 				(font
@@ -12848,7 +13308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 71.12 88.9 0)
 			(effects
 				(font
@@ -12884,7 +13344,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S17")
+					(reference "S19")
 					(unit 1)
 				)
 			)
@@ -12900,7 +13360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "676e3581-c9cb-4c1a-9b90-588b2850f4da")
-		(property "Reference" "D68"
+		(property "Reference" "D70"
 			(at 147.32 179.0699 90)
 			(effects
 				(font
@@ -12918,7 +13378,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 180.34 0)
 			(effects
 				(font
@@ -12972,7 +13432,77 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D68")
+					(reference "D70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 304.8 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67e2bc3d-39ab-4262-bf99-ecae22d54954")
+		(property "Reference" "R1"
+			(at 307.34 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 307.34 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 303.022 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 304.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0da52640-369f-41d1-bb14-e830bd188bac")
+		)
+		(pin "2"
+			(uuid "bed30004-923c-4711-bf7b-c43d03bfdf45")
+		)
+		(instances
+			(project ""
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -12988,7 +13518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6822edd2-f24b-4ee8-a405-9091d079196b")
-		(property "Reference" "D51"
+		(property "Reference" "D53"
 			(at 116.84 151.1299 90)
 			(effects
 				(font
@@ -13006,7 +13536,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 114.3 152.4 0)
 			(effects
 				(font
@@ -13060,7 +13590,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D51")
+					(reference "D53")
 					(unit 1)
 				)
 			)
@@ -13076,7 +13606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69a1a2a8-1984-41f6-9453-f31076493b8a")
-		(property "Reference" "D27"
+		(property "Reference" "D29"
 			(at 177.8 95.2499 90)
 			(effects
 				(font
@@ -13094,7 +13624,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 175.26 96.52 0)
 			(effects
 				(font
@@ -13148,7 +13678,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D27")
+					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -13164,7 +13694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69c8f00c-bcdd-401c-85aa-08328ed09da8")
-		(property "Reference" "S14"
+		(property "Reference" "S15"
 			(at 193.04 53.34 0)
 			(effects
 				(font
@@ -13180,7 +13710,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 60.96 0)
 			(effects
 				(font
@@ -13216,7 +13746,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S14")
+					(reference "S15")
 					(unit 1)
 				)
 			)
@@ -13232,7 +13762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69d940dd-738c-42ee-9112-dba4d6fdd584")
-		(property "Reference" "D20"
+		(property "Reference" "D22"
 			(at 106.68 95.2499 90)
 			(effects
 				(font
@@ -13250,7 +13780,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 96.52 0)
 			(effects
 				(font
@@ -13304,7 +13834,82 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D20")
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "extra_stuff:OLED_DISPLAY_I2C")
+		(at 347.98 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69f65bc7-4e14-4fcd-b8e2-e05f56ee592a")
+		(property "Reference" "U1"
+			(at 347.98 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED96-636"
+			(at 354.33 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "keyboard:MODULE_DM-OLED096-636"
+			(at 347.98 173.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.snapeda.com/parts/DM-OLED096-636/Display%20Module/datasheet/"
+			(at 346.202 178.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 347.98 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "ed0c041a-5e59-460b-9a1a-59b6faacf494")
+		)
+		(pin "2"
+			(uuid "e7f71561-cd94-4f61-818f-20eea0f18274")
+		)
+		(pin "3"
+			(uuid "c2848551-01e8-4496-b9a0-18989446127b")
+		)
+		(pin "1"
+			(uuid "d72ef8aa-4b21-4c03-ade3-78a5209d904e")
+		)
+		(instances
+			(project ""
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13320,7 +13925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f393f95-786c-4437-acad-2c995821c480")
-		(property "Reference" "D28"
+		(property "Reference" "D30"
 			(at 187.96 95.2499 90)
 			(effects
 				(font
@@ -13338,7 +13943,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 96.52 0)
 			(effects
 				(font
@@ -13392,7 +13997,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D28")
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 147.32 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f789122-c876-42bc-8998-2ccd89fdd55a")
+		(property "Reference" "H7"
+			(at 149.86 256.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 149.86 259.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 147.32 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 147.32 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -13408,7 +14077,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fa84cbc-9366-4b9c-a5b4-98cad215bc1d")
-		(property "Reference" "S7"
+		(property "Reference" "S8"
 			(at 121.92 53.34 0)
 			(effects
 				(font
@@ -13424,7 +14093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 121.92 60.96 0)
 			(effects
 				(font
@@ -13460,7 +14129,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S7")
+					(reference "S8")
 					(unit 1)
 				)
 			)
@@ -13476,7 +14145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "726b1f40-1b44-47c1-b81d-00501d7065d7")
-		(property "Reference" "D81"
+		(property "Reference" "D83"
 			(at 187.96 207.0099 90)
 			(effects
 				(font
@@ -13494,7 +14163,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 208.28 0)
 			(effects
 				(font
@@ -13548,7 +14217,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D81")
+					(reference "D83")
 					(unit 1)
 				)
 			)
@@ -13564,7 +14233,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73ae6026-1bf6-492c-b99f-22ad9c0418e7")
-		(property "Reference" "S26"
+		(property "Reference" "S28"
 			(at 162.56 81.28 0)
 			(effects
 				(font
@@ -13580,7 +14249,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 162.56 88.9 0)
 			(effects
 				(font
@@ -13616,7 +14285,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S26")
+					(reference "S28")
 					(unit 1)
 				)
 			)
@@ -13632,7 +14301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73f2680f-107c-4765-840f-98f8032ccc15")
-		(property "Reference" "D29"
+		(property "Reference" "D31"
 			(at 198.12 95.2499 90)
 			(effects
 				(font
@@ -13650,7 +14319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 96.52 0)
 			(effects
 				(font
@@ -13704,7 +14373,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D29")
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -13720,7 +14389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75752fcf-0278-4aa9-8753-d412ae217c23")
-		(property "Reference" "S20"
+		(property "Reference" "S22"
 			(at 101.6 81.28 0)
 			(effects
 				(font
@@ -13736,7 +14405,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 101.6 88.9 0)
 			(effects
 				(font
@@ -13772,7 +14441,75 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S20")
+					(reference "S22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "keyswitch:Placeholder_Keyswitch")
+		(at 203.2 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "761aba4b-1985-48d1-9bb9-8de8f25146db")
+		(property "Reference" "S16"
+			(at 203.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Magic"
+			(at 203.2 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 203.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b00d98d7-88ba-4dca-9a66-729f76e82491")
+		)
+		(pin "1"
+			(uuid "6181e0cc-7826-46d6-bae4-0d28b0f15aba")
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "S16")
 					(unit 1)
 				)
 			)
@@ -13788,7 +14525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77d78653-c1e3-476a-8824-5ed718c826b5")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 137.16 67.3099 90)
 			(effects
 				(font
@@ -13806,7 +14543,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 134.62 68.58 0)
 			(effects
 				(font
@@ -13860,7 +14597,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D8")
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 146.05 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "782eb859-7e5b-4d1e-b02a-df8cfe579f74")
+		(property "Reference" "H2"
+			(at 148.59 245.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 148.59 247.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 146.05 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 146.05 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -13876,7 +14677,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78c791b1-58ec-4e55-88f2-a0d1a75fddb0")
-		(property "Reference" "D65"
+		(property "Reference" "D67"
 			(at 116.84 179.0699 90)
 			(effects
 				(font
@@ -13894,7 +14695,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 114.3 180.34 0)
 			(effects
 				(font
@@ -13948,7 +14749,73 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D65")
+					(reference "D67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 331.47 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ade66ad-0072-4a95-b236-c3e7228a15cb")
+		(property "Reference" "#PWR03"
+			(at 331.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 331.47 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 331.47 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 331.47 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be8772f5-4a39-4cc4-9aef-c3523adab560")
+		)
+		(instances
+			(project ""
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -13964,7 +14831,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c1dd061-aa9b-4fdc-9476-35eec938ffca")
-		(property "Reference" "D0"
+		(property "Reference" "D1"
 			(at 55.88 67.3099 90)
 			(effects
 				(font
@@ -13982,7 +14849,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -14036,7 +14903,7 @@
 		(instances
 			(project ""
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D0")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -14052,7 +14919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d653b44-5cfc-483d-9631-cf84794788e0")
-		(property "Reference" "D78"
+		(property "Reference" "D80"
 			(at 157.48 207.0099 90)
 			(effects
 				(font
@@ -14070,7 +14937,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 208.28 0)
 			(effects
 				(font
@@ -14124,7 +14991,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D78")
+					(reference "D80")
 					(unit 1)
 				)
 			)
@@ -14140,7 +15007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d826267-ad0b-40ef-86eb-ec8d0210caca")
-		(property "Reference" "S79"
+		(property "Reference" "S81"
 			(at 162.56 193.04 0)
 			(effects
 				(font
@@ -14156,7 +15023,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 162.56 200.66 0)
 			(effects
 				(font
@@ -14192,7 +15059,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S79")
+					(reference "S81")
 					(unit 1)
 				)
 			)
@@ -14208,7 +15075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ebaa8de-ca26-440c-b184-1509b77d6af9")
-		(property "Reference" "S19"
+		(property "Reference" "S21"
 			(at 91.44 81.28 0)
 			(effects
 				(font
@@ -14224,7 +15091,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 91.44 88.9 0)
 			(effects
 				(font
@@ -14260,7 +15127,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S19")
+					(reference "S21")
 					(unit 1)
 				)
 			)
@@ -14276,7 +15143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81207e19-da1a-484e-af4b-9ccada788fae")
-		(property "Reference" "D25"
+		(property "Reference" "D27"
 			(at 157.48 95.2499 90)
 			(effects
 				(font
@@ -14294,7 +15161,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 96.52 0)
 			(effects
 				(font
@@ -14348,7 +15215,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D25")
+					(reference "D27")
 					(unit 1)
 				)
 			)
@@ -14364,7 +15231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81760ad4-a159-4601-8bc7-1b95a5373085")
-		(property "Reference" "D77"
+		(property "Reference" "D79"
 			(at 147.32 207.0099 90)
 			(effects
 				(font
@@ -14382,7 +15249,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 208.28 0)
 			(effects
 				(font
@@ -14436,7 +15303,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D77")
+					(reference "D79")
 					(unit 1)
 				)
 			)
@@ -14452,7 +15319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "849af076-a1d3-42a3-b3ef-6cfdb88b6085")
-		(property "Reference" "D44"
+		(property "Reference" "D46"
 			(at 198.12 123.1899 90)
 			(effects
 				(font
@@ -14470,7 +15337,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 124.46 0)
 			(effects
 				(font
@@ -14524,7 +15391,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D44")
+					(reference "D46")
 					(unit 1)
 				)
 			)
@@ -14540,7 +15407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85bdb4d2-9311-45eb-9bbd-87dd974c553b")
-		(property "Reference" "D26"
+		(property "Reference" "D28"
 			(at 167.64 95.2499 90)
 			(effects
 				(font
@@ -14558,7 +15425,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 165.1 96.52 0)
 			(effects
 				(font
@@ -14612,7 +15479,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D26")
+					(reference "D28")
 					(unit 1)
 				)
 			)
@@ -14628,7 +15495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86315149-df0a-4a5c-a2d7-126b11c205b3")
-		(property "Reference" "S29"
+		(property "Reference" "S31"
 			(at 193.04 81.28 0)
 			(effects
 				(font
@@ -14644,7 +15511,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 88.9 0)
 			(effects
 				(font
@@ -14680,7 +15547,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S29")
+					(reference "S31")
 					(unit 1)
 				)
 			)
@@ -14696,7 +15563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87b8cfc2-0c33-4e79-9d3a-4d6ef1a0cefc")
-		(property "Reference" "D38"
+		(property "Reference" "D40"
 			(at 137.16 123.1899 90)
 			(effects
 				(font
@@ -14714,7 +15581,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 134.62 124.46 0)
 			(effects
 				(font
@@ -14768,7 +15635,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D38")
+					(reference "D40")
 					(unit 1)
 				)
 			)
@@ -14784,7 +15651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87baeeac-adfb-492a-b2d6-cea5e1f42178")
-		(property "Reference" "D75"
+		(property "Reference" "D77"
 			(at 76.2 207.0099 90)
 			(effects
 				(font
@@ -14802,7 +15669,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 208.28 0)
 			(effects
 				(font
@@ -14856,7 +15723,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D75")
+					(reference "D77")
 					(unit 1)
 				)
 			)
@@ -14872,7 +15739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88f91cec-fd48-4672-ac71-6d6e0fb01edf")
-		(property "Reference" "D41"
+		(property "Reference" "D43"
 			(at 167.64 123.1899 90)
 			(effects
 				(font
@@ -14890,7 +15757,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 165.1 124.46 0)
 			(effects
 				(font
@@ -14944,7 +15811,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D41")
+					(reference "D43")
 					(unit 1)
 				)
 			)
@@ -14960,7 +15827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "896e6391-330a-4155-9e30-6717b2950b0b")
-		(property "Reference" "S64"
+		(property "Reference" "S66"
 			(at 101.6 165.1 0)
 			(effects
 				(font
@@ -14976,7 +15843,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 101.6 172.72 0)
 			(effects
 				(font
@@ -15012,7 +15879,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S64")
+					(reference "S66")
 					(unit 1)
 				)
 			)
@@ -15028,7 +15895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a462322-17e2-4c45-b1bb-28b6a28b2a7b")
-		(property "Reference" "D74"
+		(property "Reference" "D76"
 			(at 66.04 207.0099 90)
 			(effects
 				(font
@@ -15046,7 +15913,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 208.28 0)
 			(effects
 				(font
@@ -15100,7 +15967,137 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D74")
+					(reference "D76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 125.73 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8afa3bcf-2534-459b-b5b8-4a7d9ad0afd6")
+		(property "Reference" "H6"
+			(at 128.27 256.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 128.27 259.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 125.73 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 125.73 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 312.42 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b6ec120-59bf-40fe-9642-395f0aa6a01d")
+		(property "Reference" "#PWR06"
+			(at 312.42 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 312.42 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 312.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9aaccec3-12db-4385-a0d6-28b6f01148eb")
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -15116,7 +16113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bc8e682-27ed-4900-af5b-703623bb6410")
-		(property "Reference" "D54"
+		(property "Reference" "D56"
 			(at 147.32 151.1299 90)
 			(effects
 				(font
@@ -15134,7 +16131,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 152.4 0)
 			(effects
 				(font
@@ -15188,7 +16185,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D54")
+					(reference "D56")
 					(unit 1)
 				)
 			)
@@ -15204,7 +16201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bdb29ee-05a7-4b4c-b70f-33ba236c4321")
-		(property "Reference" "D61"
+		(property "Reference" "D63"
 			(at 76.2 179.0699 90)
 			(effects
 				(font
@@ -15222,7 +16219,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 180.34 0)
 			(effects
 				(font
@@ -15276,7 +16273,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D61")
+					(reference "D63")
 					(unit 1)
 				)
 			)
@@ -15292,7 +16289,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8df59207-d786-4cbd-a165-b14cc4d80b3f")
-		(property "Reference" "D7"
+		(property "Reference" "D8"
 			(at 127 67.3099 90)
 			(effects
 				(font
@@ -15310,7 +16307,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 124.46 68.58 0)
 			(effects
 				(font
@@ -15364,7 +16361,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -15380,7 +16377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fe1211a-031c-4fe7-bf54-0ed80ade5722")
-		(property "Reference" "S61"
+		(property "Reference" "S63"
 			(at 71.12 165.1 0)
 			(effects
 				(font
@@ -15396,7 +16393,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 71.12 172.72 0)
 			(effects
 				(font
@@ -15432,7 +16429,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S61")
+					(reference "S63")
 					(unit 1)
 				)
 			)
@@ -15448,7 +16445,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92603824-c92a-48d0-a5be-485d4c73a481")
-		(property "Reference" "D52"
+		(property "Reference" "D54"
 			(at 127 151.1299 90)
 			(effects
 				(font
@@ -15466,7 +16463,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 124.46 152.4 0)
 			(effects
 				(font
@@ -15520,7 +16517,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D52")
+					(reference "D54")
 					(unit 1)
 				)
 			)
@@ -15536,7 +16533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97543f63-63fc-4da1-9374-cb5ad326c1bd")
-		(property "Reference" "S55"
+		(property "Reference" "S57"
 			(at 152.4 137.16 0)
 			(effects
 				(font
@@ -15552,7 +16549,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 144.78 0)
 			(effects
 				(font
@@ -15588,7 +16585,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S55")
+					(reference "S57")
 					(unit 1)
 				)
 			)
@@ -15604,7 +16601,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b189032-f272-4069-971f-de85f3920617")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 86.36 67.3099 90)
 			(effects
 				(font
@@ -15622,7 +16619,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 68.58 0)
 			(effects
 				(font
@@ -15676,7 +16673,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -15692,7 +16689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eabfb07-86d9-40ed-9491-0f2215e016da")
-		(property "Reference" "S39"
+		(property "Reference" "S41"
 			(at 142.24 109.22 0)
 			(effects
 				(font
@@ -15708,7 +16705,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 116.84 0)
 			(effects
 				(font
@@ -15744,7 +16741,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S39")
+					(reference "S41")
 					(unit 1)
 				)
 			)
@@ -15760,7 +16757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f1c8189-50da-4f4c-a200-e0aacca285ff")
-		(property "Reference" "S12"
+		(property "Reference" "S13"
 			(at 172.72 53.34 0)
 			(effects
 				(font
@@ -15776,7 +16773,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 172.72 60.96 0)
 			(effects
 				(font
@@ -15812,7 +16809,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S12")
+					(reference "S13")
 					(unit 1)
 				)
 			)
@@ -15828,7 +16825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1eaa1a1-387e-4825-95ab-5bd0d66f5443")
-		(property "Reference" "S33"
+		(property "Reference" "S35"
 			(at 81.28 109.22 0)
 			(effects
 				(font
@@ -15844,7 +16841,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 81.28 116.84 0)
 			(effects
 				(font
@@ -15880,7 +16877,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S33")
+					(reference "S35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 186.69 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3d7e9ea-bf4e-4838-be98-78b0e8be9baf")
+		(property "Reference" "H9"
+			(at 189.23 257.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 189.23 260.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 186.69 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 186.69 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H9")
 					(unit 1)
 				)
 			)
@@ -15896,7 +16957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9645882-a287-4e15-a91a-afe0a42d8fe8")
-		(property "Reference" "S11"
+		(property "Reference" "S12"
 			(at 162.56 53.34 0)
 			(effects
 				(font
@@ -15912,7 +16973,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 162.56 60.96 0)
 			(effects
 				(font
@@ -15948,7 +17009,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S11")
+					(reference "S12")
 					(unit 1)
 				)
 			)
@@ -15964,7 +17025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aab1543d-abf9-4de6-90cc-cf0e800407ca")
-		(property "Reference" "D60"
+		(property "Reference" "D62"
 			(at 66.04 179.0699 90)
 			(effects
 				(font
@@ -15982,7 +17043,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 180.34 0)
 			(effects
 				(font
@@ -16036,7 +17097,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D60")
+					(reference "D62")
 					(unit 1)
 				)
 			)
@@ -16052,7 +17113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ade99018-2b22-4207-8386-3f12fe153fb6")
-		(property "Reference" "S25"
+		(property "Reference" "S27"
 			(at 152.4 81.28 0)
 			(effects
 				(font
@@ -16068,7 +17129,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 88.9 0)
 			(effects
 				(font
@@ -16104,7 +17165,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S25")
+					(reference "S27")
 					(unit 1)
 				)
 			)
@@ -16120,7 +17181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0637722-f171-426b-8cdd-4c369b5c2c84")
-		(property "Reference" "S10"
+		(property "Reference" "S11"
 			(at 152.4 53.34 0)
 			(effects
 				(font
@@ -16136,7 +17197,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 152.4 60.96 0)
 			(effects
 				(font
@@ -16172,7 +17233,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S10")
+					(reference "S11")
 					(unit 1)
 				)
 			)
@@ -16188,7 +17249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b099b8b3-3fbc-431b-82bb-9f7499d6d04d")
-		(property "Reference" "D66"
+		(property "Reference" "D68"
 			(at 127 179.0699 90)
 			(effects
 				(font
@@ -16206,7 +17267,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 124.46 180.34 0)
 			(effects
 				(font
@@ -16260,7 +17321,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D66")
+					(reference "D68")
 					(unit 1)
 				)
 			)
@@ -16276,7 +17337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0dfee39-8f6b-41c1-a2ec-731c4765ae75")
-		(property "Reference" "D13"
+		(property "Reference" "D14"
 			(at 187.96 67.3099 90)
 			(effects
 				(font
@@ -16294,7 +17355,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 68.58 0)
 			(effects
 				(font
@@ -16348,7 +17409,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D13")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -16364,7 +17425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1848681-5cef-4d4a-a794-1dceb4ef0cbc")
-		(property "Reference" "D31"
+		(property "Reference" "D33"
 			(at 66.04 123.1899 90)
 			(effects
 				(font
@@ -16382,7 +17443,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 124.46 0)
 			(effects
 				(font
@@ -16436,7 +17497,95 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D31")
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 205.74 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b883c18c-0447-4a65-aacf-a33c1f94b715")
+		(property "Reference" "D16"
+			(at 208.28 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 208.28 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "da24708a-ee09-47c8-aaaa-ac0ef30af4e3")
+		)
+		(pin "1"
+			(uuid "b71e5e7c-1096-4524-b088-dac13930bd02")
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -16452,7 +17601,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9d23b6e-7a2a-41fe-87d6-0b79f2990d80")
-		(property "Reference" "S4"
+		(property "Reference" "S5"
 			(at 91.44 53.34 0)
 			(effects
 				(font
@@ -16468,7 +17617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 91.44 60.96 0)
 			(effects
 				(font
@@ -16504,7 +17653,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S4")
+					(reference "S5")
 					(unit 1)
 				)
 			)
@@ -16520,7 +17669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb470135-2ea5-479a-854a-778a20c08806")
-		(property "Reference" "D39"
+		(property "Reference" "D41"
 			(at 147.32 123.1899 90)
 			(effects
 				(font
@@ -16538,7 +17687,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 124.46 0)
 			(effects
 				(font
@@ -16592,7 +17741,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D39")
+					(reference "D41")
 					(unit 1)
 				)
 			)
@@ -16608,7 +17757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd1ad379-17b1-472e-8e0f-d67f3058a477")
-		(property "Reference" "D56"
+		(property "Reference" "D58"
 			(at 167.64 151.1299 90)
 			(effects
 				(font
@@ -16626,7 +17775,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 165.1 152.4 0)
 			(effects
 				(font
@@ -16680,7 +17829,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D56")
+					(reference "D58")
 					(unit 1)
 				)
 			)
@@ -16696,7 +17845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bec7f787-9c77-4614-9e7d-e2564a8feccc")
-		(property "Reference" "D11"
+		(property "Reference" "D12"
 			(at 167.64 67.3099 90)
 			(effects
 				(font
@@ -16714,7 +17863,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 165.1 68.58 0)
 			(effects
 				(font
@@ -16768,7 +17917,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D11")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -16784,7 +17933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bed1f3a2-feb5-4d78-8bc6-c09ee6b7be2f")
-		(property "Reference" "D32"
+		(property "Reference" "D34"
 			(at 76.2 123.1899 90)
 			(effects
 				(font
@@ -16802,7 +17951,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 124.46 0)
 			(effects
 				(font
@@ -16856,7 +18005,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D32")
+					(reference "D34")
 					(unit 1)
 				)
 			)
@@ -16872,7 +18021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfcc4d4f-c044-4ea6-a375-adeba8a6fa92")
-		(property "Reference" "D43"
+		(property "Reference" "D45"
 			(at 187.96 123.1899 90)
 			(effects
 				(font
@@ -16890,7 +18039,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 185.42 124.46 0)
 			(effects
 				(font
@@ -16944,7 +18093,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D43")
+					(reference "D45")
 					(unit 1)
 				)
 			)
@@ -16960,7 +18109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfddc514-76ab-4157-9422-83f368ca9d6e")
-		(property "Reference" "D46"
+		(property "Reference" "D48"
 			(at 66.04 151.1299 90)
 			(effects
 				(font
@@ -16978,7 +18127,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 63.5 152.4 0)
 			(effects
 				(font
@@ -17032,7 +18181,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D46")
+					(reference "D48")
 					(unit 1)
 				)
 			)
@@ -17048,7 +18197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2f088b4-2e3f-4155-a594-077fb9ec34aa")
-		(property "Reference" "D19"
+		(property "Reference" "D21"
 			(at 96.52 95.2499 90)
 			(effects
 				(font
@@ -17066,7 +18215,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 93.98 96.52 0)
 			(effects
 				(font
@@ -17120,7 +18269,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D19")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -17136,7 +18285,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c32e0a4f-c29f-430f-b58c-0f416e6d1ba9")
-		(property "Reference" "D42"
+		(property "Reference" "D44"
 			(at 177.8 123.1899 90)
 			(effects
 				(font
@@ -17154,7 +18303,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 175.26 124.46 0)
 			(effects
 				(font
@@ -17208,7 +18357,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D42")
+					(reference "D44")
 					(unit 1)
 				)
 			)
@@ -17224,7 +18373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c33d243a-4a86-4f9d-98fc-9382f77f81d1")
-		(property "Reference" "D24"
+		(property "Reference" "D26"
 			(at 147.32 95.2499 90)
 			(effects
 				(font
@@ -17242,7 +18391,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 96.52 0)
 			(effects
 				(font
@@ -17296,7 +18445,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D24")
+					(reference "D26")
 					(unit 1)
 				)
 			)
@@ -17312,7 +18461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c545c5c5-1040-4812-818c-aa63bf628351")
-		(property "Reference" "S31"
+		(property "Reference" "S33"
 			(at 60.96 109.22 0)
 			(effects
 				(font
@@ -17328,7 +18477,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 60.96 116.84 0)
 			(effects
 				(font
@@ -17364,7 +18513,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S31")
+					(reference "S33")
 					(unit 1)
 				)
 			)
@@ -17380,7 +18529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c61087dd-114e-4762-a87a-8eab5bf5db0e")
-		(property "Reference" "D79"
+		(property "Reference" "D81"
 			(at 167.64 207.0099 90)
 			(effects
 				(font
@@ -17398,7 +18547,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 165.1 208.28 0)
 			(effects
 				(font
@@ -17452,7 +18601,74 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D79")
+					(reference "D81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 328.93 157.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c868918c-5bb1-4c8f-8e19-ef4f7bd30806")
+		(property "Reference" "#PWR04"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 325.12 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 328.93 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 328.93 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 328.93 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11a183fe-a979-44eb-a564-7aeb0414324f")
+		)
+		(instances
+			(project ""
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -17468,7 +18684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c87ba57d-7a3b-4a5a-bcf5-d826cc49072e")
-		(property "Reference" "D55"
+		(property "Reference" "D57"
 			(at 157.48 151.1299 90)
 			(effects
 				(font
@@ -17486,7 +18702,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 152.4 0)
 			(effects
 				(font
@@ -17540,7 +18756,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D55")
+					(reference "D57")
 					(unit 1)
 				)
 			)
@@ -17556,7 +18772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca2ec455-a8e0-481a-90c7-d6c78bd39f9b")
-		(property "Reference" "D17"
+		(property "Reference" "D19"
 			(at 76.2 95.2499 90)
 			(effects
 				(font
@@ -17574,7 +18790,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 96.52 0)
 			(effects
 				(font
@@ -17628,7 +18844,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D17")
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 163.83 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbf489e4-38d8-4e65-916d-edfffa214d40")
+		(property "Reference" "H3"
+			(at 166.37 245.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 166.37 247.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 163.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 163.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "keyboard"
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -17644,7 +18924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd4fec99-8556-4c42-b1af-d7769f41d833")
-		(property "Reference" "D9"
+		(property "Reference" "D10"
 			(at 147.32 67.3099 90)
 			(effects
 				(font
@@ -17662,7 +18942,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 144.78 68.58 0)
 			(effects
 				(font
@@ -17716,7 +18996,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -17732,7 +19012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce6a19ab-af5d-4f25-812f-54433c57a75d")
-		(property "Reference" "S46"
+		(property "Reference" "S48"
 			(at 60.96 137.16 0)
 			(effects
 				(font
@@ -17748,7 +19028,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 60.96 144.78 0)
 			(effects
 				(font
@@ -17784,7 +19064,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S46")
+					(reference "S48")
 					(unit 1)
 				)
 			)
@@ -17800,7 +19080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cee6f17c-cb09-4a0b-aec2-624d25d25727")
-		(property "Reference" "S44"
+		(property "Reference" "S46"
 			(at 193.04 109.22 0)
 			(effects
 				(font
@@ -17816,7 +19096,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 193.04 116.84 0)
 			(effects
 				(font
@@ -17852,7 +19132,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S44")
+					(reference "S46")
 					(unit 1)
 				)
 			)
@@ -17868,7 +19148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d09af602-21ca-476a-96c1-25ae81af4e74")
-		(property "Reference" "S2"
+		(property "Reference" "S3"
 			(at 71.12 53.34 0)
 			(effects
 				(font
@@ -17884,7 +19164,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 71.12 60.96 0)
 			(effects
 				(font
@@ -17920,7 +19200,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S2")
+					(reference "S3")
 					(unit 1)
 				)
 			)
@@ -17936,7 +19216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1d0754f-6bba-41b1-b8d7-91e22d35656b")
-		(property "Reference" "S47"
+		(property "Reference" "S49"
 			(at 71.12 137.16 0)
 			(effects
 				(font
@@ -17952,7 +19232,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 71.12 144.78 0)
 			(effects
 				(font
@@ -17988,7 +19268,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S47")
+					(reference "S49")
 					(unit 1)
 				)
 			)
@@ -18004,7 +19284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d515abf4-b88b-474d-9513-897346c8e089")
-		(property "Reference" "D45"
+		(property "Reference" "D47"
 			(at 55.88 151.1299 90)
 			(effects
 				(font
@@ -18022,7 +19302,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 152.4 0)
 			(effects
 				(font
@@ -18076,7 +19356,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D45")
+					(reference "D47")
 					(unit 1)
 				)
 			)
@@ -18092,7 +19372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6d35762-11dc-49f0-bca2-a7a46580e0fe")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 116.84 67.3099 90)
 			(effects
 				(font
@@ -18110,7 +19390,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 114.3 68.58 0)
 			(effects
 				(font
@@ -18164,7 +19444,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -18180,7 +19460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7b9e451-ddcc-4958-a2f9-d351254df452")
-		(property "Reference" "S42"
+		(property "Reference" "S44"
 			(at 172.72 109.22 0)
 			(effects
 				(font
@@ -18196,7 +19476,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 172.72 116.84 0)
 			(effects
 				(font
@@ -18232,7 +19512,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S42")
+					(reference "S44")
 					(unit 1)
 				)
 			)
@@ -18248,7 +19528,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d82c4814-fdc0-4d3c-9b10-9b71ef4c3969")
-		(property "Reference" "D10"
+		(property "Reference" "D11"
 			(at 157.48 67.3099 90)
 			(effects
 				(font
@@ -18266,7 +19546,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 154.94 68.58 0)
 			(effects
 				(font
@@ -18320,7 +19600,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D10")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -18336,7 +19616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db413a43-4dbe-4172-bea3-9b4e32519755")
-		(property "Reference" "D49"
+		(property "Reference" "D51"
 			(at 96.52 151.1299 90)
 			(effects
 				(font
@@ -18354,7 +19634,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 93.98 152.4 0)
 			(effects
 				(font
@@ -18408,7 +19688,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D49")
+					(reference "D51")
 					(unit 1)
 				)
 			)
@@ -18424,7 +19704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db82ec9c-81e7-4a2c-9994-9b01a63c38d2")
-		(property "Reference" "S23"
+		(property "Reference" "S25"
 			(at 132.08 81.28 0)
 			(effects
 				(font
@@ -18440,7 +19720,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 132.08 88.9 0)
 			(effects
 				(font
@@ -18476,7 +19756,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S23")
+					(reference "S25")
 					(unit 1)
 				)
 			)
@@ -18492,7 +19772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc5f7cda-2cf7-4222-b423-d7aea55aa3f3")
-		(property "Reference" "S59"
+		(property "Reference" "S61"
 			(at 50.8 165.1 0)
 			(effects
 				(font
@@ -18508,7 +19788,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-2.25U"
 			(at 50.8 172.72 0)
 			(effects
 				(font
@@ -18544,7 +19824,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S59")
+					(reference "S61")
 					(unit 1)
 				)
 			)
@@ -18560,7 +19840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dccfb24b-d850-4426-9425-d96d2a1b5c34")
-		(property "Reference" "S75"
+		(property "Reference" "S77"
 			(at 71.12 193.04 0)
 			(effects
 				(font
@@ -18576,7 +19856,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1.25U"
 			(at 71.12 200.66 0)
 			(effects
 				(font
@@ -18612,7 +19892,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S75")
+					(reference "S77")
 					(unit 1)
 				)
 			)
@@ -18628,7 +19908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcdcfe0d-42b7-4c1f-ac25-780c105df14b")
-		(property "Reference" "D53"
+		(property "Reference" "D55"
 			(at 137.16 151.1299 90)
 			(effects
 				(font
@@ -18646,7 +19926,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 134.62 152.4 0)
 			(effects
 				(font
@@ -18700,7 +19980,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D53")
+					(reference "D55")
 					(unit 1)
 				)
 			)
@@ -18716,7 +19996,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddd14837-b60b-41ac-95bd-823390cd86e6")
-		(property "Reference" "S54"
+		(property "Reference" "S56"
 			(at 142.24 137.16 0)
 			(effects
 				(font
@@ -18732,7 +20012,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -18768,7 +20048,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S54")
+					(reference "S56")
 					(unit 1)
 				)
 			)
@@ -18784,7 +20064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df34b263-62dc-4537-9566-3b4cf91c170e")
-		(property "Reference" "D47"
+		(property "Reference" "D49"
 			(at 76.2 151.1299 90)
 			(effects
 				(font
@@ -18802,7 +20082,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 73.66 152.4 0)
 			(effects
 				(font
@@ -18856,7 +20136,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D47")
+					(reference "D49")
 					(unit 1)
 				)
 			)
@@ -18872,7 +20152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df56c596-cc38-43ec-a0cc-1dcd0089cc8a")
-		(property "Reference" "D59"
+		(property "Reference" "D61"
 			(at 55.88 179.0699 90)
 			(effects
 				(font
@@ -18890,7 +20170,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 53.34 180.34 0)
 			(effects
 				(font
@@ -18944,7 +20224,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D59")
+					(reference "D61")
 					(unit 1)
 				)
 			)
@@ -18960,7 +20240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e17718ce-ce87-4985-a503-d6b9ac795e1d")
-		(property "Reference" "S9"
+		(property "Reference" "S10"
 			(at 142.24 53.34 0)
 			(effects
 				(font
@@ -18976,7 +20256,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 142.24 60.96 0)
 			(effects
 				(font
@@ -19012,7 +20292,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S9")
+					(reference "S10")
 					(unit 1)
 				)
 			)
@@ -19028,7 +20308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e342962e-2e9f-4158-a0ae-e2de16e06f04")
-		(property "Reference" "D48"
+		(property "Reference" "D50"
 			(at 86.36 151.1299 90)
 			(effects
 				(font
@@ -19046,7 +20326,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 152.4 0)
 			(effects
 				(font
@@ -19100,7 +20380,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D48")
+					(reference "D50")
 					(unit 1)
 				)
 			)
@@ -19116,7 +20396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea0bf07a-a4b7-4a17-adcc-08d261b21fec")
-		(property "Reference" "D72"
+		(property "Reference" "D74"
 			(at 198.12 179.0699 90)
 			(effects
 				(font
@@ -19134,7 +20414,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 180.34 0)
 			(effects
 				(font
@@ -19188,7 +20468,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D72")
+					(reference "D74")
 					(unit 1)
 				)
 			)
@@ -19204,7 +20484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef633cd3-9dee-46dc-a8d8-bca0cbbc1b87")
-		(property "Reference" "D12"
+		(property "Reference" "D13"
 			(at 177.8 67.3099 90)
 			(effects
 				(font
@@ -19222,7 +20502,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 175.26 68.58 0)
 			(effects
 				(font
@@ -19276,7 +20556,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -19292,7 +20572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f16e7495-94ac-48e9-9ed4-b1449638a49d")
-		(property "Reference" "D4"
+		(property "Reference" "D5"
 			(at 96.52 67.3099 90)
 			(effects
 				(font
@@ -19310,7 +20590,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 93.98 68.58 0)
 			(effects
 				(font
@@ -19364,7 +20644,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -19380,7 +20660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f26001cb-4de2-410c-933b-f95850452217")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 350.52 142.24 0)
 			(effects
 				(font
@@ -19430,7 +20710,7 @@
 		(instances
 			(project ""
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -19446,7 +20726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3c74b9b-ee0d-4120-bad6-5ccd91a12712")
-		(property "Reference" "D64"
+		(property "Reference" "D66"
 			(at 106.68 179.0699 90)
 			(effects
 				(font
@@ -19464,7 +20744,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 104.14 180.34 0)
 			(effects
 				(font
@@ -19518,7 +20798,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D64")
+					(reference "D66")
 					(unit 1)
 				)
 			)
@@ -19534,7 +20814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3e6ed6d-a9dd-4765-8cd9-92725c963c88")
-		(property "Reference" "S51"
+		(property "Reference" "S53"
 			(at 111.76 137.16 0)
 			(effects
 				(font
@@ -19550,7 +20830,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 111.76 144.78 0)
 			(effects
 				(font
@@ -19586,7 +20866,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S51")
+					(reference "S53")
 					(unit 1)
 				)
 			)
@@ -19602,7 +20882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4520aed-b1b3-454b-b60c-35f2193bf638")
-		(property "Reference" "S53"
+		(property "Reference" "S55"
 			(at 132.08 137.16 0)
 			(effects
 				(font
@@ -19618,7 +20898,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 132.08 144.78 0)
 			(effects
 				(font
@@ -19654,7 +20934,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S53")
+					(reference "S55")
 					(unit 1)
 				)
 			)
@@ -19670,7 +20950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4bd1f38-e7e1-44b8-ad7b-b0da43832e1c")
-		(property "Reference" "S57"
+		(property "Reference" "S59"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -19686,7 +20966,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-2.25U"
 			(at 182.88 144.78 0)
 			(effects
 				(font
@@ -19722,7 +21002,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S57")
+					(reference "S59")
 					(unit 1)
 				)
 			)
@@ -19738,7 +21018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f53a1fea-843b-46da-ba25-eaec58c0ad98")
-		(property "Reference" "S52"
+		(property "Reference" "S54"
 			(at 121.92 137.16 0)
 			(effects
 				(font
@@ -19754,7 +21034,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 121.92 144.78 0)
 			(effects
 				(font
@@ -19790,7 +21070,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S52")
+					(reference "S54")
 					(unit 1)
 				)
 			)
@@ -19806,7 +21086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5abf38b-e974-46b2-b82f-6df087c1ddda")
-		(property "Reference" "D82"
+		(property "Reference" "D84"
 			(at 198.12 207.0099 90)
 			(effects
 				(font
@@ -19824,7 +21104,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 195.58 208.28 0)
 			(effects
 				(font
@@ -19878,7 +21158,71 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D82")
+					(reference "D84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 125.73 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9887a79-ae74-42d4-8edb-c4b504747740")
+		(property "Reference" "H1"
+			(at 128.27 245.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 128.27 247.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 125.73 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 125.73 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -19894,7 +21238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fada5a71-08c2-4a42-bc86-6670d99ab20a")
-		(property "Reference" "S28"
+		(property "Reference" "S30"
 			(at 182.88 81.28 0)
 			(effects
 				(font
@@ -19910,7 +21254,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-2U"
 			(at 182.88 88.9 0)
 			(effects
 				(font
@@ -19946,7 +21290,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S28")
+					(reference "S30")
 					(unit 1)
 				)
 			)
@@ -19962,7 +21306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc87a453-09b1-4584-9e9f-119fd250ab45")
-		(property "Reference" "S6"
+		(property "Reference" "S7"
 			(at 111.76 53.34 0)
 			(effects
 				(font
@@ -19978,7 +21322,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "keyboard:MX-Hotswap-1U"
 			(at 111.76 60.96 0)
 			(effects
 				(font
@@ -20014,7 +21358,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "S6")
+					(reference "S7")
 					(unit 1)
 				)
 			)
@@ -20030,7 +21374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe943a1e-ecf7-4bed-91f6-6e079b4def80")
-		(property "Reference" "D63"
+		(property "Reference" "D65"
 			(at 96.52 179.0699 90)
 			(effects
 				(font
@@ -20048,7 +21392,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 93.98 180.34 0)
 			(effects
 				(font
@@ -20102,7 +21446,7 @@
 		(instances
 			(project "keyboard"
 				(path "/2bafe818-3dc7-45cb-8e58-910469f49f92"
-					(reference "D63")
+					(reference "D65")
 					(unit 1)
 				)
 			)

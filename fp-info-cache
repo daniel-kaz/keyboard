@@ -1,11 +1,4 @@
-25718255379386876
-1048P
-BAT_1048P
-
-
-0
-4
-4
+25716558099849443
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95864,27 +95857,6 @@ Logo WEEE
 0
 0
 0
-TPS2116DRLR
-SOTFL50P160X60-8N
-
-
-0
-8
-8
-TPS2117DRLR
-SOTFL50P160X60-8N
-
-
-0
-8
-8
-TPS2121RUXR
-IC_TPS2121RUXR
-
-
-0
-16
-16
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
@@ -101905,13 +101877,6 @@ igbt diode module
 0
 25
 25
-USB4120-03-C_REVA
-GCT_USB4120-03-C_REVA
-
-
-0
-20
-20
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -102697,33 +102662,61 @@ Varistor VF
 2
 2
 keyboard
-QFN40P700X700X90-57N
+MODULE_DM-OLED096-636
 
 
 0
-57
-57
+8
+8
 keyboard
-SW_Kailh_Choc_Mini_1.50u
-Kailh Choc Mini CPG1232 low profile keyswitch Keycap 1.50u
-Kailh Choc Mini CPG1232 Keyboard Low Profile Keyswitch Switch Cutout Keycap 1.50u
+MX-Hotswap-1.5U
+
+
 0
 2
 2
 keyboard
-customshittyprint
+MX-Hotswap-1.25U
 
 
 0
-4
-4
+2
+2
 keyboard
-switch-MSK-12C02-smd
+MX-Hotswap-1.75U
 
 
 0
-7
-3
+2
+2
+keyboard
+MX-Hotswap-1U
+
+
+0
+2
+2
+keyboard
+MX-Hotswap-2.25U
+
+
+0
+2
+2
+keyboard
+MX-Hotswap-2U
+
+
+0
+2
+2
+keyboard
+MX-Hotswap-6.25U
+
+
+0
+2
+2
 w_smd_cap
 c_0402
 SMT capacitor, 0402
