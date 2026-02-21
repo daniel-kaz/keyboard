@@ -125,7 +125,7 @@
         "max_error": 0.005,
         "min_clearance": 0.127,
         "min_connection": 0.2,
-        "min_copper_edge_clearance": 0.4,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.3,
         "min_hole_to_hole": 0.45,
@@ -468,6 +468,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -664,6 +665,10 @@
     [
       "2bafe818-3dc7-45cb-8e58-910469f49f92",
       "Root"
+    ],
+    [
+      "d45c6216-ffab-45ad-b933-0d7747adf9fb",
+      "keyboard matrix"
     ]
   ],
   "text_variables": {}
