@@ -101,7 +101,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -191,6 +191,8 @@
         0.15,
         0.2,
         0.25,
+        0.35,
+        0.4,
         0.5,
         0.8,
         1.0,
@@ -649,6 +651,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -669,6 +679,10 @@
     [
       "d45c6216-ffab-45ad-b933-0d7747adf9fb",
       "keyboard matrix"
+    ],
+    [
+      "ab6378b5-02fd-499d-94a8-64601968e5e6",
+      "ARGB LEDS"
     ]
   ],
   "text_variables": {}

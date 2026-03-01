@@ -1,4 +1,4 @@
-27242025442413149
+27247341367602506
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107912,6 +107912,13 @@ LED RGB 6028 rear mount reverse
 4
 4
 keyboard
+LED_SK6812-E
+
+
+0
+4
+4
+keyboard
 LED_SK6812-MINI-E-reversible
 
 
@@ -107987,6 +107994,20 @@ MX-Hotswap-6.25U
 
 0
 2
+2
+keyboard
+MX-Hotswap-ttt1U
+
+
+0
+2
+2
+keyboard
+SW_MX_HS_CPG151101S11_1u
+Footprint for Cherry MX style switches with Kailh hotswap socket
+
+0
+6
 2
 keyboard
 USB_C_Receptacle_HRO_TYPE-C-31-M-12

@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "a456d8cc-260d-4df9-9513-3886c99c124a")
-	(paper "A3")
+	(paper "A4")
 	(lib_symbols
 		(symbol "Device:D"
 			(pin_numbers
@@ -2676,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 189.23) (xy 177.8 189.23)
+			(xy 167.64 189.23) (xy 168.91 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3988,7 +3988,7 @@
 	)
 	(global_label "Row 5"
 		(shape input)
-		(at 177.8 189.23 0)
+		(at 168.91 189.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3998,7 +3998,7 @@
 		)
 		(uuid "b2ebd095-fc28-4a12-b787-22f4dfbe55a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.7118 189.23 0)
+			(at 177.8218 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
