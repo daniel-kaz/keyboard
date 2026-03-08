@@ -517,10 +517,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "prod/",
+      "plot": "prod_plate/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "keyboard.step",
       "svg": "",
       "vrml": ""
     },
