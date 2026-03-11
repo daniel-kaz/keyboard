@@ -3,4 +3,5 @@
   (lib (name "sk6812-e")(type "KiCad")(uri "${KIPRJMOD}/keyboard.pretty/SK6812-E.kicad_sym")(options "")(descr "")(disabled)(hidden))
   (lib (name "extra_stuff")(type "KiCad")(uri "${KIPRJMOD}/extra_stuff.kicad_sym")(options "")(descr "")(disabled)(hidden))
   (lib (name "various")(type "KiCad")(uri "C:/Users/Daniel/Downloads/marbastlib-various.kicad_sym")(options "")(descr ""))
+  (lib (name "usbc")(type "KiCad")(uri "${KIPRJMOD}/keyboard.pretty/USB4105-GF-A-120.kicad_sym")(options "")(descr ""))
 )

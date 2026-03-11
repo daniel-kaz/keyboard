@@ -1,4 +1,4 @@
-27247341367682435
+27249114587642321
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107904,6 +107904,13 @@ Varistor VF
 0
 2
 2
+keyboard
+GCT_USB4105-GF-A-120-niv
+
+
+0
+16
+16
 keyboard
 LED_6028R
 rear-mount SMD 6028 RGB LED
